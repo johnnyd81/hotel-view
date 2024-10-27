@@ -1,0 +1,85 @@
+.header {
+  background-color: darkgreen;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin: -10px;
+  position: relative;
+}
+
+.headerContainer {
+  width: 100%;
+  max-width: 1024px;
+  margin: 20px 0 100px 0;
+}
+
+.headerContainer.listPage {
+  margin: 20px 0 0 0;
+}
+
+.headerTitle {
+  text-align: center;
+}
+
+.headerSearch {
+  /*I positioned each element of the searchbar by using flexbox*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: chocolate;
+  padding: 10px;
+  border-radius: 5px;
+  outline: 1px solid black;
+  height: 30px;
+  width: 100%;
+  max-width: 1024px;
+  position: absolute;
+}
+
+.headerSearchItem {
+  display: flex;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.headerSearchInput {
+  text-transform: lowercase;
+  width: 180px;
+}
+
+.choices {
+  position: absolute;
+  top: 50px;
+  background-color: rgb(92, 81, 46);
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px lightgray;
+  z-index: 2;
+}
+
+.choiceItem {
+  width: 230px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.date {
+  position: absolute;
+  top: 50px;
+  right: 0px;
+  z-index: 2;
+}
+
+.searchBtn {
+  cursor: pointer;
+  position: absolute;
+  margin-left: -40%;
+  color: white;
+  font-size: 1.1rem;
+  bottom: 12px;
+  padding: 5px 10px;
+  background-color: rgb(197, 14, 14);
+  border-radius: 5px;
+}

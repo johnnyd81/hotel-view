@@ -1,0 +1,11 @@
+.booking-item {
+  width: 30%; /*a width of 30% allows three components to be aligned side by side*/
+  background-color: rgb(141, 190, 219);
+  border-radius: 5px;
+  margin: 20px 0 5px 5px;
+  font-size: 1rem;
+  text-align: center;
+  padding: 0 0 10px 10px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}

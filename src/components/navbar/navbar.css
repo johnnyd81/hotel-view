@@ -1,0 +1,43 @@
+.navbar {
+  height: 60px;
+  background-color: goldenrod;
+  display: flex;
+  justify-content: center;
+  margin: -10px;
+  padding: 0 0 10px 0;
+}
+
+.navContainer {
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.navTitle {
+  font-weight: 600;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 1.4rem;
+}
+
+.navButton {
+  margin-left: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  color: darkblue;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.userName {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+}

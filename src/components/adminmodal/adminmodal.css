@@ -1,0 +1,55 @@
+.adminModal {
+  width: 100vw; /*the width and height covers the entire viewport with the background-color specified*/
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.418);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.adminModalContainer {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.modalClose {
+  /*the styles specified here styles the closing icon to my modal*/
+  font-size: 1.2rem;
+  color: rgb(182, 63, 63);
+  position: absolute;
+  top: -2px;
+  right: 3px;
+}
+
+.adminForm {
+  margin-top: 10px;
+}
+
+.formItem {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.formInput {
+  font-size: 0.95rem;
+}
+
+.cancelBtn {
+  background-color: rgb(128, 34, 52);
+  color: white;
+  border: none;
+  padding: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 3px;
+  margin-left: 3px;
+}
+
+.error {
+  margin-top: 20px;
+}

@@ -1,0 +1,72 @@
+.resultItem {
+  border: 1px solid lightgray;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-left: 7px;
+  margin-bottom: 5px;
+  margin-top: 20px;
+}
+
+.riImg {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.riDescription {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 2;
+}
+
+.rCity {
+  text-transform: capitalize;
+}
+
+.riTitle {
+  font-size: 23px;
+  color: #0071c2;
+}
+
+.riSubtitle {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.riDetails {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.riDetailTexts {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.riPrice {
+  font-size: 24px;
+}
+
+.riCheckButton {
+  background-color: #0071c2;
+  color: white;
+  font-weight: bold;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  padding: 10px 5px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 130px;
+}

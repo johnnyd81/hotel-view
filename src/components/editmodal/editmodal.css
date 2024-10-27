@@ -1,0 +1,58 @@
+.editModal {
+  width: 100vw; /*the width and height covers the entire viewport with the background-color specified*/
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.418);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.editModalContainer {
+  background-color: white;
+  padding: 20px;
+  position: relative;
+}
+
+.modalClose {
+  /*the styles specified here styles the closing icon to my modal*/
+  font-size: 1.2rem;
+  color: rgb(182, 63, 63);
+  position: absolute;
+  top: -2px;
+  right: 3px;
+}
+
+.editForm {
+  margin-top: 10px;
+}
+
+.formInput {
+  font-size: 0.95rem;
+}
+
+.formBtns {
+  margin-top: 20px;
+  margin-left: 10%;
+}
+
+.cancelBtn {
+  background-color: rgb(128, 34, 52);
+  color: white;
+  padding: 4px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.saveBtn {
+  background-color: rgb(18, 137, 173);
+  color: white;
+  padding: 4px;
+  font-size: 0.95rem;
+  margin-left: 4px;
+  cursor: pointer;
+  border-radius: 3px;
+}

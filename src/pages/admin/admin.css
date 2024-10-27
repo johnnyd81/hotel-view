@@ -1,0 +1,14 @@
+.userContainer,
+.bookingContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tabContainer {
+  margin-left: 35px;
+}
+
+.tab {
+  font-size: 1rem;
+}

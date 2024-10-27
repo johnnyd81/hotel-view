@@ -1,0 +1,30 @@
+.userItem {
+  width: 30%;
+  background-color: rgb(140, 209, 108);
+  border-radius: 5px;
+  margin: 20px 0 5px 5px;
+  font-size: 1rem;
+  text-align: center;
+  padding: 0 0 10px 10px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.editBtn {
+  background-color: rgb(172, 114, 8);
+  padding: 4px;
+  color: white;
+  font-size: 0.95rem;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.deleteBtn {
+  background-color: rgb(123, 100, 165);
+  padding: 4px;
+  color: white;
+  font-size: 0.95rem;
+  border-radius: 3px;
+  margin-left: 3px;
+  cursor: pointer;
+}
