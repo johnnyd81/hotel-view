@@ -14,7 +14,7 @@ const EditModal = ({ user, setOpen }) => {
   const editUser = async (id) => {
     const newName = { username };
 
-    const response = await fetch("/api/users/" + id, {
+    const response = await fetch("http://localhost:4000/api/users/" + id, {
       method: "PUT", //the put method edits the details of a specific user
       body: JSON.stringify(newName),
       headers: {
