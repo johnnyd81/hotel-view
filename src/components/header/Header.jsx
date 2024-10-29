@@ -186,7 +186,7 @@ const Header = ({ type }) => {
         )}
       </div>
       {type !== "result_list" && (
-        <div className="btnContainer">
+        <div className="btnContainer" >
           <button className="searchBtn" onClick={handleSearch}>
             Search
           </button>

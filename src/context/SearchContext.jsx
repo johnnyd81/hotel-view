@@ -1,6 +1,6 @@
 import { createContext, useReducer } from "react";
 
-//allows the search values to be available in the entire app
+//allows the search values to be available in the entire app by making it global
 export const searchContext = createContext();
 
 export const searchReducer = (state, action) => {
@@ -15,7 +15,7 @@ export const searchReducer = (state, action) => {
 };
 
 export const SearchContextProvider = ({ children }) => {
-  const [state, dispatch] = useReducer(searchReducer, { 
+  const [state, dispatch] = useReducer(searchReducer, {
     destination: null, //the initial values are all specified here
     date: [],
     choices: { adult: 1, children: 0, room: 1 },
