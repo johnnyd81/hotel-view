@@ -2,7 +2,8 @@ import { createContext, useReducer } from "react";
 
 export const BookingContext = createContext(); //creates context
 
-//specifies actions that can be used to alter the state value i.e. bookings
+//specifies actions that can be used to alter the state value
+//Actions handled in this function are getting bookings and deleting bookings
 export const bookingReducer = (state, action) => {
   switch (action.type) {
     case "GET_BOOKINGS":
