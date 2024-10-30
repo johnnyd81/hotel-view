@@ -31,10 +31,13 @@ export const usersReducer = (state, action) => {
 };
 
 export const UsercontextProvider = ({ children }) => {
+  //useReducer hook takes a reducer function and the initial state value i.e. users 
   const [state, dispatch] = useReducer(usersReducer, {
     users: [],
   });
 
+  //the value prop contains an object that is made available to all components in the app
+  //the dispatch function is used to update the stateful value when it needs to be done
   return (
     <Usercontext.Provider value={{ ...state, dispatch }}>
       {children}
