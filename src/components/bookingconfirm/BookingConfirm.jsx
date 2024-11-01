@@ -5,6 +5,7 @@ import { Link, useLocation } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
 const BookingConfirm = () => {
+  //location variable contains properties like the url and available state properties
   const location = useLocation();
   const data = location.state.json;
   const bookingId = location.state.json._id;
