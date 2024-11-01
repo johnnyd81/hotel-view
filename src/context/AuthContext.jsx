@@ -1,6 +1,6 @@
 import { createContext, useEffect, useReducer } from "react";
 
-export const AuthContext = createContext(); //creates the auth context
+export const AuthContext = createContext(); //creates the auth context to be used globally in the app
 
 //the function below provides actions that can be performed on the state variable i.e. the user
 export const authReducer = (state, action) => {
