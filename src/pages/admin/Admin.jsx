@@ -25,6 +25,7 @@ export default Admin;
 
 //the users available in the database are fetched using useEffect and are displayed using the UserItem component
 export const Users = () => {
+  //get the context variables users and the dispatch method to update the global usercontext
   const { users, dispatch } = useUsercontext();
 
   useEffect(() => {
