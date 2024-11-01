@@ -4,6 +4,7 @@ import "./bookingitem.css";
 import { useAuthContext } from "../../hooks/useAuthContext";
 
 const BookingItem = ({ booking }) => {
+  //import the dispatch method to update the global bookingcontext
   const { dispatch } = useBookingContext();
   //the dispatch function is used to update the contextual state
   const { adminUser } = useAuthContext();
