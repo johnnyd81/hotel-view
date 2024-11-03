@@ -27,7 +27,8 @@ const useFetchData = (url) => {
     };
     fetchData();
   }, [url]);
-
+  
+    //the function returns the retrieved data, the isLoading state and the error object
   return { data, isLoading, error };
 };
 
