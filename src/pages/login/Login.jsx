@@ -9,7 +9,7 @@ const Login = () => {
   const { isLoading, error, login } = useLogin();
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
+    e.preventDefault(); //prevent the default form actions i.e. refreshing the webpage
 
     await login(username, password);
   };
