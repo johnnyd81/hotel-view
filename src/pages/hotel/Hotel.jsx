@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom";
 import { useAuthContext } from "../../hooks/useAuthContext";
 
 const Hotel = () => {
-  const location = useLocation();
+  const location = useLocation(); //store the location object in the location variable
   const id = location.pathname.split("/")[2]; //gets the id of a hotel
   const { data, isLoading } = useFetchData(
     `http://localhost:4000/api/hotels/find/${id}`
