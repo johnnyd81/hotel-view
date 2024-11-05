@@ -8,12 +8,12 @@ import useFetchData from "../../hooks/useFetchData";
 
 const ResultList = () => {
   const location = useLocation(); //uses the properties available from the current location
-  const [destination, setDestination] = useState(location.state.destination);
+  const [destination, setDestination] = useState(location.state.destination); // stores the initial destination
   const date = location.state.date;
   const [min, setMin] = useState(0);
   const [max, setMax] = useState(0);
 
-  //fetches data from the database that matches the queries i.e.destination, min, max
+  //fetches data from the database that matches the queries i.e. destination, min, max
   const { data, isLoading } = useFetchData(
     `http://localhost:4000/api/hotels?city=${destination}&min=${min || 0}&max=${max || 2000}`
   );
