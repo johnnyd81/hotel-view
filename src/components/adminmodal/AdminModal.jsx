@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 import { useAuthContext } from "../../hooks/useAuthContext";
 
 const AdminModal = () => {
-  //required stateful variables
+  //required stateful variables 
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
-  const { dispatch } = useAuthContext();
+  const { dispatch } = useAuthContext(); // dispatch method is used to update the global authcontext
 
   const handleSubmit = async (e) => {
     e.preventDefault();
