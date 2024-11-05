@@ -3,7 +3,7 @@ import "./signup.css";
 import useSignUp from "../../hooks/useSignUp";
 
 const Signup = () => {
-  //the stateful values below are used to sign up a user
+  // the stateful values username and password are used to register a new user
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const { error, isLoading, signup } = useSignUp();
