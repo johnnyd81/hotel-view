@@ -1,11 +1,17 @@
 .formContainer1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form1 {
   width: 100%;
-  background-color: rgb(132, 197, 47);
+  background-color: rgb(185, 235, 120);
   padding: 50px;
   border-radius: 10px;
   box-shadow: 2px 2px 15px black;
   max-width: 600px;
-  margin: 7% 24.2%;
+  margin: 8% auto;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
