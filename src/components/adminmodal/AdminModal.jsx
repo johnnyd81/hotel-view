@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { useAuthContext } from "../../hooks/useAuthContext";
 
 const AdminModal = () => {
-  //required stateful variables 
+  //required stateful variables
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState(null);
@@ -40,8 +40,8 @@ const AdminModal = () => {
   };
 
   return (
-    <div className="adminModal">
-      <form onSubmit={handleSubmit} className="adminModalContainer">
+    <div className="adminModalContainer">
+      <form onSubmit={handleSubmit} className="adminModal">
         <div className="formItem">
           <label>Username:</label>
           <input
@@ -68,8 +68,8 @@ const AdminModal = () => {
         <Link to="/login">
           <button className="cancelBtn">Cancel</button>
         </Link>
-        {error && <div className="error">{error}</div>}
       </form>
+      {error && <div className="error">{error}</div>}
     </div>
   );
 };

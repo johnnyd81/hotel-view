@@ -1,4 +1,4 @@
-.adminModal {
+.adminModalContainer {
   width: 100vw; /*the width and height covers the entire viewport with the background-color specified*/
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.418);
@@ -6,11 +6,12 @@
   top: 0;
   left: 0;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.adminModalContainer {
+.adminModal {
   background-color: white;
   padding: 20px;
   border-radius: 5px;
@@ -52,4 +53,7 @@
 
 .error {
   margin-top: 20px;
+}
+
+@media (max-width: 750px) {
 }
