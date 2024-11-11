@@ -1,0 +1,30 @@
+.planner-slider {
+  display: flex;
+  width: 1600px;
+  gap: 20px;
+  margin: 0 auto;
+  overflow-y: hidden;
+}
+
+.planner-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.planner-item-name {
+  margin: 2px 2px;
+  color: darkcyan;
+  text-shadow: 0.5px 0.5px 1px #000;
+}
+
+.planner-item-distance {
+  margin: 5px 2px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.planner-item img {
+  height: 180px;
+  width: 200px;
+  border-radius: 6px;
+  outline: 1px solid gray;
+}

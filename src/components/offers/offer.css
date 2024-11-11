@@ -1,0 +1,20 @@
+.offer-container {
+  box-sizing: border-box;
+  width: 98%;
+  overflow: auto;
+  margin: 2rem auto;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.offer-container::-webkit-scrollbar {
+  display: none;
+}
+
+.offer-heading {
+  width: 98%;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin: 0 auto;
+  color: darkgreen;
+}

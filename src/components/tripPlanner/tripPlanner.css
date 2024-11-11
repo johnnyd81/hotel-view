@@ -1,0 +1,15 @@
+.planner-container {
+  box-sizing: border-box;
+  width: 96%;
+  overflow: auto;
+  margin: 2rem auto;
+}
+
+.planner-container::-webkit-scrollbar {
+  display: none;
+}
+
+.planner-heading {
+  width: 96%;
+  margin: 0 auto;
+}
