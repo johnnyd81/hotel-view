@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./adminmodal.css";
 import { Link } from "react-router-dom";
 import { useAuthContext } from "../../hooks/useAuthContext";
+import LoadingModal from "../loadingmodal/LoadingModal";
 
 const AdminModal = () => {
   //required stateful variables
@@ -69,6 +70,7 @@ const AdminModal = () => {
           <button className="cancelBtn">Cancel</button>
         </Link>
       </form>
+      {isLoading && <LoadingModal />}
       {error && <div className="error">{error}</div>}
     </div>
   );

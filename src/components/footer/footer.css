@@ -1,0 +1,45 @@
+.footer-main {
+  background-color: rgb(12, 12, 105);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  height: 240px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem -10px -5px -10px;
+}
+
+.footer-title {
+  margin-top: -0.3%;
+  font-size: 1.3rem;
+}
+
+.footer-msg {
+  margin-top: 10px;
+}
+
+.form-box {
+  height: 60px;
+}
+
+.footer-form input {
+  height: 45px;
+  width: 250px;
+  border: none;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 1.1rem;
+}
+
+.footer-form button {
+  height: 48px;
+  margin-left: 6px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  background-color: royalblue;
+  cursor: pointer;
+}

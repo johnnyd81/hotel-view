@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./login.css";
 import useLogin from "../../hooks/useLogin";
+import LoadingModal from "../../components/loadingmodal/LoadingModal";
 
 const Login = () => {
   //the state values below are used to log in a user
@@ -41,6 +42,7 @@ const Login = () => {
           Log in
         </button>
       </form>
+      {isLoading && <LoadingModal />}
       {error && <div className="error">{error}</div>}
     </div>
   );

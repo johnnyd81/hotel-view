@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./signup.css";
 import useSignUp from "../../hooks/useSignUp";
+import LoadingModal from "../../components/loadingmodal/LoadingModal";
 
 const Signup = () => {
   // the stateful values username and password are used to register a new user
@@ -41,6 +42,7 @@ const Signup = () => {
           Sign up
         </button>
       </form>
+      {isLoading && <LoadingModal />}
       {error && <div className="error">{error}</div>}
     </div>
   );
