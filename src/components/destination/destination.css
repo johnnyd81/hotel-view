@@ -1,0 +1,23 @@
+.dest-main {
+  width: 100.1%;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.dest-container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.dest-heading {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.dest-container-1,
+.dest-container-2 {
+  display: flex;
+  gap: 20px;
+  height: 250px;
+  margin: 1.2rem 0;
+}

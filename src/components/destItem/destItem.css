@@ -1,0 +1,21 @@
+.dest-item {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.dest-pic {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+}
+
+.dest-title {
+  position: absolute;
+  top: -5%;
+  left: 4%;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 800;
+  text-shadow: 0.5px 0.5px 1px #000;
+}
