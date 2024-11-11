@@ -28,7 +28,7 @@ const Navbar = () => {
   };
 
   const menu = (
-    <nav className={`menu ${classValue}`}>
+    <nav className={`menu ${classValue}`} onClick={hideMenuValues}>
       <Link to="/" className="menuLink">
         Login
       </Link>
@@ -38,6 +38,23 @@ const Navbar = () => {
       <Link to="/adminmodal" className="menuLink">
         Admin
       </Link>
+      <span className="closeMenu">
+        <FontAwesomeIcon
+          icon={faX}
+          className="closeX"
+          title="Close menu"
+          onClick={hideMenuValues}
+        />
+      </span>
+    </nav>
+  );
+
+  const menu2 = (
+    <nav className={`menu ${classValue}`} onClick={hideMenuValues}>
+      <Link to="/" className="menuLink" onClick={handleClick}>
+        Logout
+      </Link>
+      <span className="userName">Hello {user && user.username}</span>
       <span className="closeMenu">
         <FontAwesomeIcon
           icon={faX}
@@ -60,7 +77,7 @@ const Navbar = () => {
           className="nNavbarmenu"
           title="Click to open menu"
         />
-        {showMenu && menu}
+        {showMenu && !user ? menu : menu2}
         <div className="navItems">
           {!user ? (
             <>

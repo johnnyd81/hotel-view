@@ -55,7 +55,7 @@
 }
 
 .menu {
-  height: 100px;
+  height: 150px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -63,9 +63,9 @@
   align-items: center;
   position: absolute;
   top: -100%;
-  background-color: teal;
+  background-color: rgb(2, 78, 78);
   z-index: 10;
-  transition: all 0.5s;
+  transition: all 0.85s;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande";
 }
 
@@ -73,7 +73,7 @@
   text-decoration: none;
   color: white;
   font-weight: bold;
-  margin-bottom: 1%;
+  margin-bottom: 2%;
 }
 
 .menuLink:hover {
