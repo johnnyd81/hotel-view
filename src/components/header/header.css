@@ -22,6 +22,7 @@
 
 .headerTitle {
   text-align: center;
+  padding: 0 7px;
 }
 
 .headerSearchContainer {
@@ -35,15 +36,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(210, 105, 30);
+  background-color: chocolate;
   padding: 10px;
   border-radius: 5px;
   outline: 1px solid black;
-  height: 50px;
+  height: 45px;
   width: 1024px;
   position: relative;
   font-size: 1.1rem;
-  margin: 3.3% 0;
+  margin: 3% 0;
 }
 
 .headerSearchItem {
@@ -54,6 +55,7 @@
 
 .headerSearchDropdown {
   font-size: 0.9rem;
+  font-weight: bold;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   border-radius: 4px;
@@ -142,6 +144,8 @@
   .choiceInput,
   .dateInput {
     width: 100%;
+    font-size: 1rem;
+    font-weight: bold;
     background-color: white;
     color: black;
     border-radius: 3px;
@@ -151,5 +155,15 @@
   .searchBtn,
   .headerSearchDropdown {
     width: 100%;
+  }
+}
+
+@media (max-width: 730px) {
+  .headerTitle {
+    font-size: 1.5rem;
+  }
+
+  .headerContainer {
+    height: 180px;
   }
 }

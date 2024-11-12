@@ -11,7 +11,7 @@
 
 .dest-heading {
   max-width: 100%;
-  margin: 0 auto;
+  margin: 2% 1%;
   color: darkgreen;
 }
 
@@ -21,4 +21,20 @@
   gap: 20px;
   height: 250px;
   margin: 1.2rem 0;
+}
+
+@media (max-width: 730px) {
+  .dest-container-1,
+  .dest-container-2 {
+    height: 200px;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 660px) {
+  .dest-container-1,
+  .dest-container-2 {
+    height: 160px;
+    gap: 10px;
+  }
 }

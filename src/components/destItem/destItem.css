@@ -19,3 +19,9 @@
   font-weight: 800;
   text-shadow: 0.5px 0.5px 1px #000;
 }
+
+@media (max-width: 550px) {
+  .dest-title {
+    font-size: 1rem;
+  }
+}
