@@ -17,6 +17,7 @@ const AdminModal = () => {
     setIsLoading(true);
     setError(null);
 
+    //login an admin user
     const response = await fetch("http://localhost:4000/api/auth/adminlogin", {
       method: "POST",
       body: JSON.stringify({ username, password }),
