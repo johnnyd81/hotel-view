@@ -73,22 +73,36 @@ const Header = ({ type }) => {
           Affordable and exciting deals. Don't delay, book today!!
         </h1>
         {type !== "result_list" && (
-          <>
+          <div className="headerSearchContainer">
             <div className="headerSearch">
               <div className="headerSearchItem">
                 <FontAwesomeIcon icon={faBed} className="mSearchIcon" />
-                <input
+                {/* <input
                   type="text"
                   placeholder="enter available city-name"
                   className="headerSearchInput"
                   onChange={(e) => setDestination(e.target.value)}
                   value={destination}
-                />
+                /> */}
+                <select
+                  value={destination}
+                  onChange={(e) => setDestination(e.target.value)}
+                  className="headerSearchDropdown"
+                >
+                  <option value="johannesburg">Johannesburg</option>
+                  <option value="cape town">Cape Town</option>
+                  <option value="durban">Durban</option>
+                  <option value="pretoria">Pretoria</option>
+                  <option value="bloemfontein">Bloemfontein</option>
+                </select>
               </div>
-              <div className="headerSearchItem">
-                <FontAwesomeIcon icon={faPerson} className="mSearchIcon" />
+              <div className="headerSearchItem" title="Amount of people">
+                <FontAwesomeIcon
+                  icon={faPerson}
+                  className="mSearchIcon person"
+                />
                 <span
-                  className="headerSearchTxt"
+                  className="headerSearchTxt choiceInput"
                   onClick={() => setOpenChoices(!openChoices)}
                 >
                   {`${choices.adult} adult/s - ${choices.children} children - ${choices.room} room/s`}
@@ -161,10 +175,16 @@ const Header = ({ type }) => {
                   </div>
                 )}
               </div>
-              <div className="headerSearchItem">
-                <FontAwesomeIcon icon={faCalendarDay} className="cSearchIcon" />
+              <div
+                className="headerSearchItem "
+                title="Select amount of days for the booking"
+              >
+                <FontAwesomeIcon
+                  icon={faCalendarDay}
+                  className="cSearchIcon calendar"
+                />
                 <span
-                  className="headerSearchText"
+                  className="headerSearchText dateInput"
                   onClick={() => setOpenDate(!openDate)}
                 >{`${format(date[0].startDate, "MM/dd/yyyy")} to ${format(
                   date[0].endDate,
@@ -181,17 +201,19 @@ const Header = ({ type }) => {
                   />
                 )}
               </div>
+              <div className="headerSearchItem">
+                <button
+                  className="searchBtn"
+                  onClick={handleSearch}
+                  title="Search for available hotels"
+                >
+                  Search
+                </button>
+              </div>
             </div>
-          </>
+          </div>
         )}
       </div>
-      {type !== "result_list" && (
-        <div className="btnContainer">
-          <button className="searchBtn" onClick={handleSearch}>
-            Search
-          </button>
-        </div>
-      )}
     </div>
   );
 };

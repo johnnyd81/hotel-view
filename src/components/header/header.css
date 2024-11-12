@@ -11,6 +11,7 @@
 
 .headerContainer {
   width: 100%;
+  height: 160px;
   max-width: 1024px;
   margin: 20px 0 100px 0;
 }
@@ -23,19 +24,26 @@
   text-align: center;
 }
 
+.headerSearchContainer {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
 .headerSearch {
   /*I positioned each element of the searchbar by using flexbox*/
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: chocolate;
+  background-color: rgb(210, 105, 30);
   padding: 10px;
   border-radius: 5px;
   outline: 1px solid black;
-  height: 30px;
-  width: 100%;
-  max-width: 1024px;
-  position: absolute;
+  height: 50px;
+  width: 1024px;
+  position: relative;
+  font-size: 1.1rem;
+  margin: 3.3% 0;
 }
 
 .headerSearchItem {
@@ -44,9 +52,13 @@
   cursor: pointer;
 }
 
-.headerSearchInput {
-  text-transform: lowercase;
-  width: 180px;
+.headerSearchDropdown {
+  font-size: 0.9rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  border-radius: 4px;
+  padding-left: 5px;
+  width: 200px;
 }
 
 .choices {
@@ -74,12 +86,70 @@
 
 .searchBtn {
   cursor: pointer;
-  position: absolute;
-  margin-left: -40%;
   color: white;
   font-size: 1.1rem;
-  bottom: 12px;
-  padding: 5px 10px;
-  background-color: rgb(136, 5, 5);
+  padding: 6px 11px;
+  background-color: rgb(41, 43, 39);
   border-radius: 5px;
+}
+
+.searchBtn:hover {
+  background-color: rgb(221, 201, 19);
+  color: black;
+  transition: all 0.6s;
+}
+
+@media (max-width: 1070px) {
+  .headerTitle {
+    font-size: 1.7rem;
+  }
+
+  .headerSearch {
+    flex-direction: column;
+    height: 130px;
+    margin: 1% 0;
+  }
+
+  .headerContainer {
+    height: 180px;
+  }
+
+  .headerSearchItem {
+    width: 100%;
+    height: 24%;
+    padding: 5px 1px;
+    margin-bottom: 2px;
+  }
+
+  .person {
+    padding-right: 1.4%;
+  }
+
+  .calendar {
+    padding-right: 1%;
+  }
+
+  .choices {
+    top: 70px;
+    right: 1.1%;
+  }
+
+  .date {
+    top: 100px;
+    right: 1.1%;
+  }
+
+  .choiceInput,
+  .dateInput {
+    width: 100%;
+    background-color: white;
+    color: black;
+    border-radius: 3px;
+    padding-left: 0.9%;
+  }
+
+  .searchBtn,
+  .headerSearchDropdown {
+    width: 100%;
+  }
 }

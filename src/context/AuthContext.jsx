@@ -32,9 +32,9 @@ export const AuthContextProvider = ({ children }) => {
   //the useEffect checks if a user is present in localStorage. If so then it logs in automatically
   useEffect(() => {
     const user = JSON.parse(localStorage.getItem("user"));
-    const adminUser = JSON.parse(localStorage.getItem("adminUser"));
+    //const adminUser = JSON.parse(localStorage.getItem("adminUser"));
 
-    if (user && adminUser) {
+    if (user) {
       dispatch({ type: "LOGIN", payload: user });
     }
   }, []);
