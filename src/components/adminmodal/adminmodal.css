@@ -12,7 +12,7 @@
 }
 
 .adminModal {
-  background-color: white;
+  background-color: white; /*style the admin modal*/
   padding: 20px;
   border-radius: 5px;
   margin: 8% auto 3%;
