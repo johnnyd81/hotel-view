@@ -30,21 +30,22 @@ const ResultList = () => {
             <h1 className="listTitle">Search by price range</h1>
             <div className="listItem">
               <label>Destination</label>
-              <input
+              {/* <input
                 type="text"
                 placeholder={destination}
                 onChange={(e) => setDestination(e.target.value)}
                 className="dInput"
-              />
-            </div>
-            <div className="listItem">
-              <label>Check-in date</label>
-              <span id="dateConfirmation">
-                {`${format(date[0].startDate, "MM/dd/yyyy")} to ${format(
-                  date[0].endDate,
-                  "MM/dd/yyyy"
-                )}`}
-              </span>
+              /> */}
+              <select
+                onChange={(e) => setDestination(e.target.value)}
+                value={destination}
+              >
+                <option value="johannesburg">Johannesburg</option>
+                <option value="cape town">Cape Town</option>
+                <option value="durban">Durban</option>
+                <option value="pretoria">Pretoria</option>
+                <option value="bloemfontein">Bloemfontein</option>
+              </select>
             </div>
             <div className="listItem">
               <label>Price range</label>
