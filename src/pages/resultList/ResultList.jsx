@@ -5,6 +5,7 @@ import { format } from "date-fns"; //allows me to format the dates
 import { useState } from "react";
 import ResultItem from "../../components/resultItem/ResultItem";
 import useFetchData from "../../hooks/useFetchData";
+import LoadingModal from "../../components/loadingmodal/LoadingModal";
 
 const ResultList = () => {
   const location = useLocation(); //uses the properties available from the current location
@@ -15,7 +16,9 @@ const ResultList = () => {
 
   //fetches data from the database that matches the queries i.e. destination, min, max
   const { data, isLoading } = useFetchData(
-    `http://localhost:4000/api/hotels?city=${destination}&min=${min || 0}&max=${max || 2000}`
+    `http://localhost:4000/api/hotels?city=${destination}&min=${min || 0}&max=${
+      max || 2000
+    }`
   );
 
   return (
@@ -73,9 +76,7 @@ const ResultList = () => {
           </div>
           <div className="listSearchResult">
             {isLoading ? (
-              <div className="loadMsg">
-                <h1>Loading!! Please wait...</h1>
-              </div>
+              <LoadingModal />
             ) : (
               data.map((item) => <ResultItem key={item._id} item={item} />)
             )}

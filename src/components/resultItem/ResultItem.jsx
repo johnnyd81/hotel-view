@@ -5,7 +5,11 @@ import { Link } from "react-router-dom";
 const ResultItem = ({ item }) => {
   return (
     <div className="resultItem">
-      <img src={item.photos[0]} alt="something to see" className="riImg" />
+      <img
+        src={"./images/" + item.photos[0]}
+        alt="something to see"
+        className="riImg"
+      />
       <div className="riDescription">
         <h1 className="riTitle">{item.name}</h1>
         <span className="rCity">{item.city}</span>

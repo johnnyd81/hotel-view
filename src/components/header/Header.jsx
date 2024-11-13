@@ -38,7 +38,7 @@ const Header = ({ type }) => {
   ]);
 
   //contains the destination value the user will enter
-  const [destination, setDestination] = useState("");
+  const [destination, setDestination] = useState("johannesburg");
 
   //the function below alters the values according to what the user selects in the people component i.e. adult, children
   const handleChoices = (choiceName, action) => {

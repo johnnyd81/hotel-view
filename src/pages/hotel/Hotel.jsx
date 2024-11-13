@@ -5,6 +5,7 @@ import Header from "../../components/header/Header";
 import { useSearchContext } from "../../hooks/useSearchContext";
 import { useNavigate } from "react-router-dom";
 import { useAuthContext } from "../../hooks/useAuthContext";
+import LoadingModal from "../../components/loadingmodal/LoadingModal";
 
 const Hotel = () => {
   const location = useLocation(); //store the location object in the location variable
@@ -62,16 +63,14 @@ const Hotel = () => {
     <div>
       <Header type="result_list" />
       {isLoading ? (
-        <div className="loadMsg">
-          <h1>Loading!!. Please wait...</h1>
-        </div>
+        <LoadingModal />
       ) : (
         <div className="hotelContainer">
           <div className="hotelImages">
             {data.photos &&
               data.photos.map((photo, index) => (
                 <div className="imgContainer" key={index}>
-                  <img src={photo} alt="" className="imgItem" />
+                  <img src={"/images/" + photo} alt="" className="imgItem" />
                 </div>
               ))}
           </div>
