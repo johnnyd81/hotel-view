@@ -54,7 +54,7 @@
 }
 
 .headerSearchDropdown {
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: bold;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
@@ -158,7 +158,7 @@
   }
 }
 
-@media (max-width: 730px) {
+@media (max-width: 733px) {
   .headerTitle {
     font-size: 1.5rem;
   }
