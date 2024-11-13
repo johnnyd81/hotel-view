@@ -30,12 +30,6 @@ const ResultList = () => {
             <h1 className="listTitle">Search by price range</h1>
             <div className="listItem">
               <label>Destination</label>
-              {/* <input
-                type="text"
-                placeholder={destination}
-                onChange={(e) => setDestination(e.target.value)}
-                className="dInput"
-              /> */}
               <select
                 onChange={(e) => setDestination(e.target.value)}
                 value={destination}

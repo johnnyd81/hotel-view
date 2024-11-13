@@ -13,8 +13,9 @@
 
 .listWrapper {
   width: 100%;
-  max-width: 1024px;
+  /* max-width: 1024px; */
   display: flex;
+  padding-right: 2%;
   gap: 20px;
 }
 
