@@ -74,26 +74,30 @@ const Hotel = () => {
                 </div>
               ))}
           </div>
-          <h1 className="hotelTitle">{data.name}</h1>
-          <span className="hotelPriceHighlight">
-            Book a stay over R{data.cheapestPrice} at this property and get a
-            discount on future bookings.
-          </span>
-          <div className="hotelDetails">
-            <div className="hotelDetailsTexts">
-              <h1 className="hotelTitle">{data.title}</h1>
-              <p className="hotelDesc">{data.description}</p>
-            </div>
-            <div className="hotelDetailsPrice">
-              <h2>Perfect for a {days} night stay!</h2>
-              <span>Book now to avoid disappointment</span>
-              <h2>
-                <b>R{days * data.cheapestPrice * choices.room}</b> ({days}{" "}
-                night/s)
-              </h2>
-              <button className="bookNow1" onClick={addBooking}>
-                Book Now!
-              </button>
+          <div className="hotelInfo">
+            <h1 className="hotelTitle">{data.name}</h1>
+            <span className="hotelPriceHighlight">
+              Book a stay over R{data.cheapestPrice} at this property and get a
+              discount on future bookings.
+            </span>
+            <div className="hotelDetails">
+              <div className="hotelDetailsTexts">
+                <h1 className="hotelTitle">{data.title}</h1>
+                <p className="hotelDesc">{data.description}</p>
+              </div>
+              <div className="hotelDetailsPrice">
+                <h2 className="sellingPoint">
+                  Perfect for a {days} night stay!
+                </h2>
+                <span>Book now to avoid disappointment</span>
+                <h2 className="grandTotal">
+                  <b>R{days * data.cheapestPrice * choices.room}</b> ({days}{" "}
+                  night/s)
+                </h2>
+                <button className="bookNow1" onClick={addBooking}>
+                  Book Now!
+                </button>
+              </div>
             </div>
           </div>
         </div>
