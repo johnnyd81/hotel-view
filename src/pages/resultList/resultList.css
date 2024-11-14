@@ -97,8 +97,16 @@
   text-transform: lowercase;
 }
 
+.showModalBtn {
+  display: none;
+}
+
 @media (max-width: 1020px) {
   .listSearch {
     display: none;
+  }
+
+  .showModalBtn {
+    display: block;
   }
 }

@@ -58,6 +58,7 @@ const ResultListModal = ({
         icon={faX}
         className="closeResultModal"
         onClick={() => closeModal("")}
+        title="Close"
       />
     </div>
   );

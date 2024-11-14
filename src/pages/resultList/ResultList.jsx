@@ -14,7 +14,7 @@ const ResultList = () => {
   const date = location.state.date;
   const [min, setMin] = useState(0);
   const [max, setMax] = useState(0);
-  const [showModal, setShowModal] = useState("show");
+  const [showModal, setShowModal] = useState("");
 
   //fetches data from the database that matches the queries i.e. destination, min, max
   const { data, isLoading } = useFetchData(
@@ -34,6 +34,9 @@ const ResultList = () => {
         show={showModal}
         closeModal={setShowModal}
       />
+      <button className="showModalBtn" onClick={() => setShowModal("show")}>
+        Search by price
+      </button>
       <div className="listContainer">
         <div className="listWrapper">
           <div className="listSearch">
