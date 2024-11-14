@@ -6,6 +6,7 @@ import { useState } from "react";
 import ResultItem from "../../components/resultItem/ResultItem";
 import useFetchData from "../../hooks/useFetchData";
 import LoadingModal from "../../components/loadingmodal/LoadingModal";
+import ResultListModal from "../../components/resultlistmodal/ResultListModal";
 
 const ResultList = () => {
   const location = useLocation(); //uses the properties available from the current location
@@ -13,6 +14,7 @@ const ResultList = () => {
   const date = location.state.date;
   const [min, setMin] = useState(0);
   const [max, setMax] = useState(0);
+  const [showModal, setShowModal] = useState("");
 
   //fetches data from the database that matches the queries i.e. destination, min, max
   const { data, isLoading } = useFetchData(
@@ -24,6 +26,13 @@ const ResultList = () => {
   return (
     <div>
       <Header type="result_list" />
+      <ResultListModal
+        destination={destination}
+        setDestination={setDestination}
+        setMin={setMin}
+        setMax={setMax}
+        show={showModal}
+      />
       <div className="listContainer">
         <div className="listWrapper">
           <div className="listSearch">

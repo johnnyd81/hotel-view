@@ -1,0 +1,14 @@
+.resultListModal {
+  position: fixed;
+  top: -100%;
+  left: 10%;
+  right: 10%;
+  padding: 10px;
+  background-color: rgb(221, 184, 17);
+  border-radius: 10px;
+  transition: all 0.8s;
+}
+
+.resultListModal.show {
+  top: 4%;
+}
