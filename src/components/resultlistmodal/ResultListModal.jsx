@@ -1,5 +1,7 @@
 import React from "react";
 import "./resultListModal.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faX } from "@fortawesome/free-solid-svg-icons";
 
 const ResultListModal = ({
   destination,
@@ -7,6 +9,7 @@ const ResultListModal = ({
   setMin,
   setMax,
   show,
+  closeModal,
 }) => {
   return (
     <div className={`resultListModal ${show}`}>
@@ -51,6 +54,11 @@ const ResultListModal = ({
           </div>
         </div>
       </div>
+      <FontAwesomeIcon
+        icon={faX}
+        className="closeResultModal"
+        onClick={() => closeModal("")}
+      />
     </div>
   );
 };

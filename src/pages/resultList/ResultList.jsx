@@ -14,7 +14,7 @@ const ResultList = () => {
   const date = location.state.date;
   const [min, setMin] = useState(0);
   const [max, setMax] = useState(0);
-  const [showModal, setShowModal] = useState("");
+  const [showModal, setShowModal] = useState("show");
 
   //fetches data from the database that matches the queries i.e. destination, min, max
   const { data, isLoading } = useFetchData(
@@ -32,6 +32,7 @@ const ResultList = () => {
         setMin={setMin}
         setMax={setMax}
         show={showModal}
+        closeModal={setShowModal}
       />
       <div className="listContainer">
         <div className="listWrapper">
