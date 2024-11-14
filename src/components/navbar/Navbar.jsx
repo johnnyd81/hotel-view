@@ -51,6 +51,9 @@ const Navbar = () => {
 
   const menu2 = (
     <nav className={`menu ${classValue}`} onClick={hideMenuValues}>
+      <Link to="/" className="menuLink">
+        Home
+      </Link>
       <Link to="/" className="menuLink" onClick={handleClick}>
         Logout
       </Link>
@@ -94,6 +97,9 @@ const Navbar = () => {
           ) : (
             <>
               <span className="userName">Hello {user.username}</span>
+              <Link to="/">
+                <button className="navButton">Home</button>
+              </Link>
               <button className="navButton" onClick={handleClick}>
                 Log out
               </button>

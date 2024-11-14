@@ -24,7 +24,7 @@ const Hotel = () => {
     return dayDifference;
   };
 
-  const days = dayAmount(date[0].endDate, date[0].startDate); //calculates the amount of days between the dates specified
+  const days = dayAmount(date[0].endDate, date[0].startDate) + 1; //calculates the amount of days between the dates specified
 
   const navigate = useNavigate();
 

@@ -1,5 +1,5 @@
 .hotelContainer {
-  width: 100%;
+  width: 90%;
   /* max-width: 1024px; */
   display: flex;
   flex-direction: column;
@@ -17,7 +17,10 @@
 }
 
 .hotelInfo {
-  padding: 0 10px 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2% 0 2% 0;
 }
 
 .hotelTitle {
@@ -37,13 +40,13 @@
 
 .hotelImages {
   display: flex;
-  height: 270px;
   justify-content: space-evenly;
-  gap: 5px;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
 .imgItem {
-  height: 260px;
+  height: 300px;
   width: 350px;
   border-radius: 5px;
   box-shadow: 4px 5px 6px black;
