@@ -10,7 +10,7 @@
 }
 
 .resultListModal.show {
-  top: 4%;
+  top: 9%;
 }
 
 .closeResultModal {
@@ -19,4 +19,10 @@
   right: 10px;
   color: white;
   cursor: pointer;
+}
+
+@media (min-width: 1020px) {
+  .resultListModal.show {
+    top: -100%;
+  }
 }

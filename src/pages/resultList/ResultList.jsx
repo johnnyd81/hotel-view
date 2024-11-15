@@ -88,9 +88,9 @@ const ResultList = () => {
             ) : (
               data.map((item) => <ResultItem key={item._id} item={item} />)
             )}
-            {destination === "" && (
+            {data.length === 0 && !isLoading && (
               <div className="loadMsg">
-                <h1>Please enter a destination?</h1>
+                <h1>No results match your search</h1>
               </div>
             )}
           </div>
