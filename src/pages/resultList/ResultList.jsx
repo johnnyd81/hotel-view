@@ -7,6 +7,8 @@ import ResultItem from "../../components/resultItem/ResultItem";
 import useFetchData from "../../hooks/useFetchData";
 import LoadingModal from "../../components/loadingmodal/LoadingModal";
 import ResultListModal from "../../components/resultlistmodal/ResultListModal";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
 const ResultList = () => {
   const location = useLocation(); //uses the properties available from the current location
@@ -40,6 +42,7 @@ const ResultList = () => {
         title="Open search by price modal"
       >
         Search by price
+        <FontAwesomeIcon icon={faSearch} className="searchIcon" />
       </button>
       <div className="listContainer">
         <div className="listWrapper">
@@ -94,7 +97,7 @@ const ResultList = () => {
             )}
             {data.length === 0 && !isLoading && (
               <div className="loadMsg">
-                <h1>No results match your search</h1>
+                <h1>0 results match your search</h1>
               </div>
             )}
           </div>
