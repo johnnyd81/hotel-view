@@ -34,7 +34,11 @@ const ResultList = () => {
         show={showModal}
         closeModal={setShowModal}
       />
-      <button className="showModalBtn" onClick={() => setShowModal("show")}>
+      <button
+        className="showModalBtn"
+        onClick={() => setShowModal("show")}
+        title="Open search by price modal"
+      >
         Search by price
       </button>
       <div className="listContainer">
