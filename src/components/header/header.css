@@ -6,6 +6,7 @@
   display: flex;
   justify-content: center;
   margin: -10px;
+  padding-bottom: 10px;
   position: relative;
 }
 
