@@ -16,12 +16,17 @@
   color: white;
 }
 
+.homeLink {
+  text-decoration: none;
+  padding-left: 2%;
+  color: #ffffff;
+}
+
 .navTitle {
   font-weight: 600;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   font-size: 1.4rem;
-  margin-left: 2%;
 }
 
 .navButton {
