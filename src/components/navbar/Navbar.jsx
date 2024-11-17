@@ -73,11 +73,7 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="navContainer">
-        <Link to="/" className="homeLink">
-          <span className="navTitle" title="Go to homepage">
-            Hotel Booking App
-          </span>
-        </Link>
+        <span className="navTitle">Hotel Booking App</span>
         <FontAwesomeIcon
           onClick={showMenuValues}
           icon={faBars}

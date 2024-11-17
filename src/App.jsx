@@ -21,7 +21,7 @@ function App() {
 
   //by using Navigate I can avoid an unauthenticated user from using the app
   return (
-    <div className="App">
+    <div className="App" style={{ width: "99.7%" }}>
       <Router>
         <Navbar />
         <Routes>
