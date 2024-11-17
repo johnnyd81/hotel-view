@@ -20,12 +20,16 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border: 2px solid lightgray;
+  background-color: rgb(229, 253, 213);
+  border-radius: 6px;
+  padding: 0 10px 10px 10px;
   margin: 2% 0 2% 0;
 }
 
 .hotelTitle {
   text-transform: capitalize;
-  color: darkgreen;
+  color: orangered;
 }
 
 .sellingPoint {
@@ -67,7 +71,7 @@
 }
 
 .bookNow1 {
-  width: 18%;
+  width: 100%;
   border: none;
   font-weight: 600;
   color: white;
