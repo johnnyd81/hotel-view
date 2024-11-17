@@ -71,7 +71,8 @@
 }
 
 .bookNow1 {
-  width: 100%;
+  width: 90%;
+  margin-left: 5%;
   border: none;
   font-weight: 600;
   color: white;
@@ -79,4 +80,11 @@
   background-color: steelblue;
   border-radius: 5px;
   cursor: pointer;
+  transition: all 0.5s;
+}
+
+.bookNow1:hover {
+  background-color: lightblue;
+  color: #000000;
+  outline: 1px solid black;
 }
