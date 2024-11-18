@@ -27,10 +27,11 @@ export default Admin;
 export const Users = () => {
   //get the context variables users and the dispatch method to update the global usercontext
   const { users, dispatch } = useUsercontext();
+  const { server } = useAuthContext();
 
   useEffect(() => {
     const getUsers = async () => {
-      const response = await fetch("http://localhost:4000/api/users");
+      const response = await fetch(server + "/api/users");
       const json = await response.json();
 
       if (!response.ok) {
@@ -56,11 +57,11 @@ export const Users = () => {
 //the bookings available in the database are fetched using useEffect and are displayed using the BookingItem component
 export const Bookings = () => {
   const { bookings, dispatch } = useBookingContext();
-  const { adminUser } = useAuthContext();
+  const { adminUser, server } = useAuthContext();
 
   useEffect(() => {
     const getBookings = async () => {
-      const response = await fetch("http://localhost:4000/api/bookings", {
+      const response = await fetch(server + "/api/bookings", {
         headers: {
           Authorization: `Bearer ${adminUser.token}`,
         },

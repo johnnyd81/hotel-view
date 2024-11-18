@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useUsercontext } from "../../hooks/useUsercontext"; //imports my user context
+import { useAuthContext } from "../../hooks/useAuthContext";
 import "./editmodal.css";
 //a fontawesome icon plays the role of a closing icon to my modal
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -10,11 +11,12 @@ const EditModal = ({ user, setOpen }) => {
   const [username, setUsername] = useState("");
   //the dispatch function updates my contextual state
   const { dispatch } = useUsercontext();
+  const { server } = useAuthContext();
 
   const editUser = async (id) => {
     const newName = { username };
 
-    const response = await fetch("http://localhost:4000/api/users/" + id, {
+    const response = await fetch(server + "/api/users/" + id, {
       method: "PUT", //the put method edits the details of a specific user
       body: JSON.stringify(newName),
       headers: {

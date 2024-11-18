@@ -10,9 +10,8 @@ import LoadingModal from "../../components/loadingmodal/LoadingModal";
 const Hotel = () => {
   const location = useLocation(); //store the location object in the location variable
   const id = location.pathname.split("/")[2]; //gets the id of a hotel
-  const { data, isLoading } = useFetchData(
-    `http://localhost:4000/api/hotels/find/${id}`
-  ); //fetches data using the useFetchData hook
+  const { server } = useAuthContext();
+  const { data, isLoading } = useFetchData(`${server}/api/hotels/find/${id}`); //fetches data using the useFetchData hook
   const { date, choices } = useSearchContext();
   const { user } = useAuthContext();
 
@@ -38,7 +37,7 @@ const Hotel = () => {
       totalAmount: days * data.cheapestPrice * choices.room,
     };
 
-    const response = await fetch("http://localhost:4000/api/bookings", {
+    const response = await fetch(server + "/api/bookings", {
       method: "POST",
       body: JSON.stringify(bookingDetails),
       headers: {

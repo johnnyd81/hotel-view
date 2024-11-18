@@ -2,16 +2,18 @@ import { useState } from "react";
 import { useUsercontext } from "../../hooks/useUsercontext";
 import EditModal from "../editmodal/EditModal"; //the edit modal is used to edit a specific user
 import "./useritem.css";
+import { useAuthContext } from "../../hooks/useAuthContext";
 
 const UserItem = ({ user }) => {
   //opens and closes the modal depending on the boolean value
   const [openModal, setOpenModal] = useState(false);
   //the dispatch function updates the contextual state
   const { dispatch } = useUsercontext();
+  const { server } = useAuthContext();
 
   //the deleteUser function removes a user from the database
   const deleteUser = async (id) => {
-    const response = await fetch("http://localhost:4000/api/users/" + id, {
+    const response = await fetch(server + "/api/users/" + id, {
       method: "DELETE",
     });
     const json = await response.json();

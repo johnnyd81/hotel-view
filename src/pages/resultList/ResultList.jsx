@@ -9,6 +9,7 @@ import LoadingModal from "../../components/loadingmodal/LoadingModal";
 import ResultListModal from "../../components/resultlistmodal/ResultListModal";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import { useAuthContext } from "../../hooks/useAuthContext";
 
 const ResultList = () => {
   const location = useLocation(); //uses the properties available from the current location
@@ -17,10 +18,11 @@ const ResultList = () => {
   const [min, setMin] = useState(0);
   const [max, setMax] = useState(0);
   const [showModal, setShowModal] = useState("");
+  const { server } = useAuthContext();
 
   //fetches data from the database that matches the queries i.e. destination, min, max
   const { data, isLoading } = useFetchData(
-    `http://localhost:4000/api/hotels?city=${destination}&min=${min || 0}&max=${
+    `${server}/api/hotels?city=${destination}&min=${min || 0}&max=${
       max || 2000
     }`
   );

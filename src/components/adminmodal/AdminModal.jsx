@@ -10,7 +10,7 @@ const AdminModal = () => {
   const [password, setPassword] = useState("");
   const [error, setError] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
-  const { dispatch } = useAuthContext(); // dispatch method is used to update the global authcontext
+  const { dispatch, server } = useAuthContext(); // dispatch method is used to update the global authcontext
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -18,7 +18,7 @@ const AdminModal = () => {
     setError(null);
 
     //login an admin user
-    const response = await fetch("http://localhost:4000/api/auth/adminlogin", {
+    const response = await fetch(server + "/api/auth/adminlogin", {
       method: "POST",
       body: JSON.stringify({ username, password }),
       headers: {

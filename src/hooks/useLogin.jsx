@@ -5,14 +5,14 @@ import { useAuthContext } from "./useAuthContext";
 const useLogin = () => {
   const [isLoading, setIsLoading] = useState(null);
   const [error, setError] = useState(null);
-  const { dispatch } = useAuthContext();
+  const { dispatch, server } = useAuthContext();
 
   //login function that attempts to log a user in
   const login = async (username, password) => {
     setError(null);
     setIsLoading(true);
-    
-    const response = await fetch("http://localhost:4000/api/auth/login", {
+
+    const response = await fetch(server + "/api/auth/login", {
       method: "POST",
       body: JSON.stringify({ username, password }),
       headers: {

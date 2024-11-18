@@ -7,11 +7,11 @@ const BookingItem = ({ booking }) => {
   //import the dispatch method to update the global bookingcontext
   const { dispatch } = useBookingContext();
   //the dispatch function is used to update the contextual state
-  const { adminUser } = useAuthContext();
+  const { adminUser, server } = useAuthContext();
 
   //the cancelBooking function removes a booking from the database
   const cancelBooking = async (id) => {
-    const response = await fetch("/api/bookings/" + id, {
+    const response = await fetch(server + "/api/bookings/" + id, {
       method: "DELETE",
       headers: {
         Authorization: `Bearer ${adminUser.token}`,

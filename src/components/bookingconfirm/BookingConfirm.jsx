@@ -9,12 +9,12 @@ const BookingConfirm = () => {
   const location = useLocation();
   const data = location.state.json;
   const bookingId = location.state.json._id;
-  const { user } = useAuthContext();
+  const { user, server } = useAuthContext();
   const { dispatch } = useBookingContext();
   const navigate = useNavigate();
 
   const removeBooking = async (id) => {
-    const response = await fetch("http://localhost:4000/api/bookings/" + id, {
+    const response = await fetch(server + "/api/bookings/" + id, {
       method: "DELETE",
       headers: {
         Authorization: `Bearer ${user.token}`,

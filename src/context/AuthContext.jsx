@@ -27,6 +27,8 @@ export const AuthContextProvider = ({ children }) => {
     adminUser: null,
   });
 
+  const server = import.meta.env.VITE_BACKEND_SERVER;
+
   console.log("Authcontext state", state);
 
   //the useEffect checks if a user is present in localStorage. If so then it logs in automatically
@@ -40,7 +42,7 @@ export const AuthContextProvider = ({ children }) => {
   }, []);
 
   return (
-    <AuthContext.Provider value={{ ...state, dispatch }}>
+    <AuthContext.Provider value={{ ...state, dispatch, server }}>
       {children}
     </AuthContext.Provider>
   );
