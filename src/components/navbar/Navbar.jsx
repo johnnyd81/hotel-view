@@ -85,7 +85,7 @@ const Navbar = () => {
           {!user ? (
             <>
               <Link to="/">
-                <button className="navButton">Log in</button>
+                <button className="navButton">Login</button>
               </Link>
               <Link to="/signup">
                 <button className="navButton">Register</button>

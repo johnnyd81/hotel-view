@@ -39,7 +39,7 @@ const Login = () => {
           />
         </div>
         <button type="submit" className="fButton" disabled={isLoading}>
-          Log in
+          Login
         </button>
       </form>
       {isLoading && <LoadingModal />}
