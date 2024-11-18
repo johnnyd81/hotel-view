@@ -97,7 +97,7 @@ const ResultList = () => {
             )}
             {data.length === 0 && !isLoading && (
               <div className="loadMsg">
-                <h1>0 results match your search</h1>
+                <h1 className="noResultMsg">0 results match your search</h1>
               </div>
             )}
           </div>
