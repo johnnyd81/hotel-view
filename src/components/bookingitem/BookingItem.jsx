@@ -45,6 +45,7 @@ const BookingItem = ({ booking }) => {
       <div className="btnContainer">
         <button
           className="cancelBtn"
+          title="Delete booking from database"
           onClick={() => cancelBooking(booking._id)}
         >
           Cancel booking

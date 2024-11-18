@@ -6,12 +6,10 @@
   justify-content: center;
 }
 
-.tabContainer {
-  margin-left: 35px;
+.Tabs.TabPane {
+  font-weight: 600;
 }
 
 .tab {
   font-size: 1rem;
-  display: flex;
-  justify-content: center;
 }
