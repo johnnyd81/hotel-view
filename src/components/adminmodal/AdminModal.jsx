@@ -65,7 +65,7 @@ const AdminModal = () => {
           />
         </div>
         <button type="submit" className="fButton" disabled={isLoading}>
-          Log in
+          Login
         </button>
         <Link to="/login">
           <button className="cancelBtn">Cancel</button>

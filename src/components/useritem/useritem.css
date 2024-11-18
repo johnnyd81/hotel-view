@@ -1,11 +1,12 @@
 .userItem {
-  width: 30%;
-  background-color: rgb(140, 209, 108);
+  width: fit-content;
+  background-color: rgb(205, 243, 248);
   border-radius: 5px;
   margin: 20px 0 5px 5px;
   font-size: 1rem;
   text-align: center;
-  padding: 0 0 10px 10px;
+  padding: 12px;
+  box-shadow: 1px 2px 3px black;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
@@ -20,7 +21,7 @@
 }
 
 .deleteBtn {
-  background-color: rgb(123, 100, 165);
+  background-color: rgb(206, 29, 6);
   padding: 4px;
   color: white;
   font-size: 0.95rem;

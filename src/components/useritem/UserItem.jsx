@@ -38,10 +38,18 @@ const UserItem = ({ user }) => {
           <b>Admin :</b> {user.isAdmin ? "Yes" : "No"}
         </p>
         <div className="btnContainer">
-          <button className="editBtn" onClick={() => setOpenModal(true)}>
+          <button
+            className="editBtn"
+            onClick={() => setOpenModal(true)}
+            title="Edit the user's name"
+          >
             Edit
           </button>
-          <button className="deleteBtn" onClick={() => deleteUser(user._id)}>
+          <button
+            className="deleteBtn"
+            onClick={() => deleteUser(user._id)}
+            title="Delete user from the database"
+          >
             Delete
           </button>
         </div>
