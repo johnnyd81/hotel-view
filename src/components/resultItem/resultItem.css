@@ -71,3 +71,9 @@
   border-radius: 5px;
   margin-top: 130px;
 }
+
+@media (max-width: 730px) {
+  .riDescription {
+    flex: 2.6;
+  }
+}

@@ -43,7 +43,11 @@ const UserItem = ({ user }) => {
           <button
             className="editBtn"
             onClick={() => setOpenModal(true)}
-            title="Edit the user's name"
+            title={
+              user.isAdmin
+                ? "Admin user cannot be edited"
+                : "Edit the user's name"
+            }
             disabled={user.isAdmin ? true : false}
           >
             Edit
@@ -51,7 +55,11 @@ const UserItem = ({ user }) => {
           <button
             className="deleteBtn"
             onClick={() => deleteUser(user._id)}
-            title="Delete user from the database"
+            title={
+              user.isAdmin
+                ? "Admin user cannot be deleted"
+                : "Delete user from the database"
+            }
             disabled={user.isAdmin ? true : false}
           >
             Delete
