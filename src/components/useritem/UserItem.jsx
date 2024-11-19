@@ -44,6 +44,7 @@ const UserItem = ({ user }) => {
             className="editBtn"
             onClick={() => setOpenModal(true)}
             title="Edit the user's name"
+            disabled={user.isAdmin ? true : false}
           >
             Edit
           </button>
@@ -51,6 +52,7 @@ const UserItem = ({ user }) => {
             className="deleteBtn"
             onClick={() => deleteUser(user._id)}
             title="Delete user from the database"
+            disabled={user.isAdmin ? true : false}
           >
             Delete
           </button>
