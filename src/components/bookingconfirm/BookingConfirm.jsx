@@ -13,6 +13,7 @@ const BookingConfirm = () => {
   const { dispatch } = useBookingContext();
   const navigate = useNavigate();
 
+  //delete a booking from the database
   const removeBooking = async (id) => {
     const response = await fetch(server + "/api/bookings/" + id, {
       method: "DELETE",
