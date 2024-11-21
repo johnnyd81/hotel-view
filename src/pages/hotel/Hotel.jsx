@@ -6,10 +6,13 @@ import { useSearchContext } from "../../hooks/useSearchContext";
 import { useNavigate } from "react-router-dom";
 import { useAuthContext } from "../../hooks/useAuthContext";
 import LoadingModal from "../../components/loadingmodal/LoadingModal";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowAltCircleLeft } from "@fortawesome/free-solid-svg-icons";
 
 const Hotel = () => {
   const location = useLocation(); //store the location object in the location variable
   const id = location.pathname.split("/")[2]; //gets the id of a hotel
+  // const destination = location
   const { server } = useAuthContext();
   const { data, isLoading } = useFetchData(`${server}/api/hotels/find/${id}`); //fetches data using the useFetchData hook
   const { date, choices } = useSearchContext();
@@ -58,9 +61,19 @@ const Hotel = () => {
     }
   };
 
+  function sendLocationData() {
+    navigate("/list", { state: { destination, date, choices } });
+  }
+
   return (
     <div>
       <Header type="result_list" />
+      <FontAwesomeIcon
+        icon={faArrowAltCircleLeft}
+        className="backArrowIcon"
+        title="Back to homepage"
+        onClick={sendLocationData}
+      />
       {isLoading ? (
         <LoadingModal />
       ) : (

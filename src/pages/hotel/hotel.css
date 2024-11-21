@@ -16,6 +16,16 @@
     "Lucida Sans", Arial, sans-serif;
 }
 
+.backArrowIcon {
+  position: absolute;
+  top: 28%;
+  left: 18%;
+  cursor: pointer;
+  font-size: 3rem;
+  color: #ffffff;
+  z-index: 0;
+}
+
 .hotelInfo {
   display: flex;
   flex-direction: column;
