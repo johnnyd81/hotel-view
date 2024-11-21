@@ -12,6 +12,7 @@ const AdminModal = () => {
   const [isLoading, setIsLoading] = useState(false);
   const { dispatch, server } = useAuthContext(); // dispatch method is used to update the global authcontext
 
+  //handle user login submission
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsLoading(true);
