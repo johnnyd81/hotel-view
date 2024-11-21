@@ -1,6 +1,6 @@
 import Header from "../../components/header/Header";
 import "./resultList.css";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { format } from "date-fns"; //allows me to format the dates
 import { useState } from "react";
 import ResultItem from "../../components/resultItem/ResultItem";
@@ -8,7 +8,10 @@ import useFetchData from "../../hooks/useFetchData";
 import LoadingModal from "../../components/loadingmodal/LoadingModal";
 import ResultListModal from "../../components/resultlistmodal/ResultListModal";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import {
+  faSearch,
+  faArrowAltCircleLeft,
+} from "@fortawesome/free-solid-svg-icons";
 import { useAuthContext } from "../../hooks/useAuthContext";
 
 const ResultList = () => {
@@ -38,6 +41,13 @@ const ResultList = () => {
         show={showModal}
         closeModal={setShowModal}
       />
+      <Link to="/">
+        <FontAwesomeIcon
+          icon={faArrowAltCircleLeft}
+          className="backArrowIcon"
+          title="Back to homepage"
+        />
+      </Link>
       <button
         className="showModalBtn"
         onClick={() => setShowModal("show")}
