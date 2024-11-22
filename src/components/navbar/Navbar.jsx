@@ -8,7 +8,7 @@ import useLogout from "../../hooks/useLogout"; //the useLogout hook allows me to
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
-  const [classValue, setClassValue] = useState("");
+  const [classValue, setClassValue] = useState(""); //alters the navbar layout according to the classValue
   const { user } = useAuthContext(); //makes the user context available in the module
 
   const { logout } = useLogout();
