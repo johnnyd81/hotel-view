@@ -8,6 +8,7 @@ const override = {
   borderColor: "red",
 };
 
+// component is used when data is being fetched that causes a delay
 function LoadingModal() {
   let [loading, setLoading] = useState(true);
   let [color, setColor] = useState("black");
