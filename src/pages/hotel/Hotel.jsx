@@ -12,10 +12,9 @@ import { faArrowAltCircleLeft } from "@fortawesome/free-solid-svg-icons";
 const Hotel = () => {
   const location = useLocation(); //store the location object in the location variable
   const id = location.pathname.split("/")[2]; //gets the id of a hotel
-  // const destination = location
   const { server } = useAuthContext();
   const { data, isLoading } = useFetchData(`${server}/api/hotels/find/${id}`); //fetches data using the useFetchData hook
-  const { date, choices } = useSearchContext();
+  const { date, choices, destination } = useSearchContext();
   const { user } = useAuthContext();
 
   const milliseconds_per_day = 60 * 60 * 24 * 1000; //amount of milliseconds for a single day
@@ -61,9 +60,9 @@ const Hotel = () => {
     }
   };
 
-  function sendLocationData() {
-    navigate("/list", { state: { destination, date, choices } });
-  }
+  const backToResultslist = () => {
+    navigate("/list", { state: { date, choices, destination } });
+  };
 
   return (
     <div>
@@ -71,8 +70,8 @@ const Hotel = () => {
       <FontAwesomeIcon
         icon={faArrowAltCircleLeft}
         className="backArrowIcon"
-        title="Back to homepage"
-        onClick={sendLocationData}
+        title="Back to results list"
+        onClick={backToResultslist}
       />
       {isLoading ? (
         <LoadingModal />
