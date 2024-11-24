@@ -34,6 +34,7 @@ const AdminModal = () => {
       console.log(json.error);
     }
 
+    //if admin login was successful the adminUser is stored in localStorage
     if (response.ok) {
       localStorage.setItem("adminUser", JSON.stringify(json));
       dispatch({ type: "LOGIN", payload: json });
