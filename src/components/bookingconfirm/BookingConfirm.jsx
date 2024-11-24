@@ -27,6 +27,7 @@ const BookingConfirm = () => {
       console.log(json.error);
     }
 
+    //alert message if the booking was deleted successfully
     if (response.ok) {
       alert("Your booking has been cancelled");
       console.log("Booking has been deleted", json);
