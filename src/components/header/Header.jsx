@@ -1,7 +1,7 @@
 import "./header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  //imports the specific icons used in the module
+  //imports the necessary icons used in this module
   faBed,
   faPerson,
   faCalendarDay,
