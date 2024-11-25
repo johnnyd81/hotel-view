@@ -1,6 +1,7 @@
 import React from "react";
 import "./footer.css";
 
+//footer component that allows a user to subscribe to a newsletter
 const Footer = () => {
   return (
     <div className="footer-main">
