@@ -13,6 +13,7 @@ const Navbar = () => {
 
   const { logout } = useLogout();
 
+  //log a user out of the app
   const handleClick = () => {
     logout();
   };
