@@ -14,6 +14,7 @@ const EditModal = ({ user, setOpen }) => {
   const { server } = useAuthContext();
 
   const editUser = async (id) => {
+    //newName stores the updated name for a user
     const newName = { username };
 
     const response = await fetch(server + "/api/users/" + id, {
