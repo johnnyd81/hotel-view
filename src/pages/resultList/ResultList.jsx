@@ -23,7 +23,7 @@ const ResultList = () => {
   const [showModal, setShowModal] = useState("");
   const { server } = useAuthContext();
 
-  //fetches data from the database that matches the queries i.e. destination, min, max
+  //fetches data from the database that matches the queries i.e. destination, minimum price and maximum price
   const { data, isLoading } = useFetchData(
     `${server}/api/hotels?city=${destination}&min=${min || 0}&max=${
       max || 2000
