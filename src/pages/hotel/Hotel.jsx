@@ -19,6 +19,7 @@ const Hotel = () => {
 
   const milliseconds_per_day = 60 * 60 * 24 * 1000; //amount of milliseconds for a single day
 
+  //calculates the amount of days a user is staying in a hotel
   const dayAmount = (date1, date2) => {
     const timeDifference = Math.abs(date2.getTime() - date1.getTime());
     const dayDifference = Math.ceil(timeDifference / milliseconds_per_day);
