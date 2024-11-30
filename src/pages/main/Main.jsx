@@ -4,7 +4,7 @@ import TripPlanner from "../../components/tripPlanner/TripPlanner";
 import Footer from "../../components/footer/Footer";
 import Header from "../../components/header/Header";
 
-// main page component i.e. the homepage
+// main homepage component
 const Main = () => {
   return (
     <div>
