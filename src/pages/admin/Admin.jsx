@@ -8,7 +8,7 @@ import BookingItem from "../../components/bookingitem/BookingItem";
 import { useAuthContext } from "../../hooks/useAuthContext";
 
 const Admin = () => {
-  //the admin page has tabs that contain the users and the bookings made by the users
+  //the admin page has tabs that contain the registered users and the bookings made by the users
   return (
     <Tabs defaultActiveKey="1" className="tabContainer">
       <Tabs.TabPane tab="Users" key="1" className="tab">
