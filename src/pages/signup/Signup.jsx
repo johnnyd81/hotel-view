@@ -7,6 +7,7 @@ const Signup = () => {
   // the stateful values username and password are used to register a new user
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  //the useSignUp hook returns the loading status, a potential error and the signup function
   const { error, isLoading, signup } = useSignUp();
 
   const handleSubmit = async (e) => {
