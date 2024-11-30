@@ -7,6 +7,7 @@ const Login = () => {
   //the state values below are used to log in a user
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  //the useLogin hook returns the loading status, the potential error and the login function
   const { isLoading, error, login } = useLogin();
 
   const handleSubmit = async (e) => {
