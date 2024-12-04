@@ -11,6 +11,7 @@ const EditModal = ({ user, setOpen }) => {
   const [username, setUsername] = useState("");
   //the dispatch function updates my contextual state
   const { dispatch } = useUsercontext();
+  //the server variable gets access to the string that connects to the deployed server
   const { server } = useAuthContext();
 
   const editUser = async (id) => {
