@@ -18,11 +18,12 @@ const BookingItem = ({ booking }) => {
       },
     });
     const json = await response.json();
-
+    
     if (!response.ok) {
       console.log(json.error);
     }
 
+    // if the response is successful then the global booking state is updated
     if (response.ok) {
       dispatch({ type: "DELETE_BOOKING", payload: json });
     }
