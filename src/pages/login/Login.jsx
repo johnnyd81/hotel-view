@@ -13,6 +13,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault(); //prevent the default form actions i.e. refreshing the webpage
 
+    // call the login function with the username and password
     await login(username, password);
   };
 
