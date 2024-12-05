@@ -12,7 +12,8 @@ import { faArrowAltCircleLeft } from "@fortawesome/free-solid-svg-icons";
 const Hotel = () => {
   const location = useLocation(); //store the location object in the location variable
   const id = location.pathname.split("/")[2]; //gets the id of a hotel
-  const { server } = useAuthContext();
+  const { server } = useAuthContext(); // destructure the server connection string from the global auth context
+  
   const { data, isLoading } = useFetchData(`${server}/api/hotels/find/${id}`); //fetches data using the useFetchData hook
   const { date, choices, destination } = useSearchContext();
   const { user } = useAuthContext();
