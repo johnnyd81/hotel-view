@@ -21,7 +21,7 @@ const ResultList = () => {
   const [min, setMin] = useState(0);
   const [max, setMax] = useState(0);
   const [showModal, setShowModal] = useState("");
-  const { server } = useAuthContext();
+  const { server } = useAuthContext(); // destructure the server connection string
 
   //fetches data from the database that matches the queries i.e. destination, minimum price and maximum price
   const { data, isLoading } = useFetchData(
