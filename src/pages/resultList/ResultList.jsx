@@ -18,8 +18,8 @@ const ResultList = () => {
   const location = useLocation(); //uses the properties available from the current location
   const [destination, setDestination] = useState(location.state.destination); // stores the initial destination
   const date = location.state.date;
-  const [min, setMin] = useState(0);
-  const [max, setMax] = useState(0);
+  const [min, setMin] = useState(0); // set the minimum price range to search the database
+  const [max, setMax] = useState(0); // set the maximum price range to search the database
   const [showModal, setShowModal] = useState("");
   const { server } = useAuthContext(); // destructure the server connection string
 
