@@ -1,4 +1,5 @@
 .listContainer {
+  /* Align the list container using flexbox */
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -13,6 +14,7 @@
 }
 
 .backArrowIcon {
+  /*Style the back arrow that navigates to the previous page*/
   position: absolute;
   top: 27%;
   left: 18%;
