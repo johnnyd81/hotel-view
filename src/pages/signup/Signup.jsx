@@ -11,6 +11,7 @@ const Signup = () => {
   const { error, isLoading, signup } = useSignUp();
 
   const handleSubmit = async (e) => {
+    //prevent webpage from refreshing itself
     e.preventDefault();
 
     await signup(username, password);
