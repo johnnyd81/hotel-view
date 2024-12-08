@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 
 //this function takes a url as a parameter and returns data, isLoading and a error
 const useFetchData = (url) => {
+  //required stateful variables
   const [data, setData] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
