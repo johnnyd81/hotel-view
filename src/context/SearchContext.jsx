@@ -16,6 +16,7 @@ export const searchReducer = (state, action) => {
 };
 
 export const SearchContextProvider = ({ children }) => {
+  //useReducer hook takes a reducer function and the initial state as arguments
   const [state, dispatch] = useReducer(searchReducer, {
     destination: null, //the initial values are all specified here
     date: [],
