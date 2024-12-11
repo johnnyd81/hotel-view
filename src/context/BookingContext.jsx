@@ -19,6 +19,8 @@ export const bookingReducer = (state, action) => {
   }
 };
 
+//the provider function takes the entire app as a child
+//the value prop is therefore available globally to the entire app
 export const BookingContextProvider = ({ children }) => {
   const [state, dispatch] = useReducer(bookingReducer, {
     bookings: [],
