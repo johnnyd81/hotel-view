@@ -1,6 +1,7 @@
 import React from "react";
 import "./destItem.css";
 
+//destination item component to display various travel destinations
 const DestItem = ({ item }) => {
   return (
     <div className="dest-item" key={item.id}>
