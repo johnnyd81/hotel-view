@@ -1,3 +1,4 @@
+/* set the main footer to be a flex container that aligns children in a column direction */
 .footer-main {
   background-color: rgb(12, 12, 105);
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
