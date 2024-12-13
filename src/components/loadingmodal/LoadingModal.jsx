@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./loadingModal.css";
+//specify the type of loader to be used
 import MoonLoader from "react-spinners/MoonLoader";
 
 const override = {
@@ -8,7 +9,7 @@ const override = {
   borderColor: "red",
 };
 
-// component is used when data is being fetched that causes a delay
+// component is used when data is being fetched and could result in a delay
 function LoadingModal() {
   let [loading, setLoading] = useState(true);
   let [color, setColor] = useState("black");
