@@ -27,6 +27,7 @@ const useFetchData = (url) => {
       }
     };
     fetchData();
+    //the dependency array contains the variable that causes the useEffect to run again when it changes
   }, [url]);
   
     //the function returns the retrieved data, the isLoading state and the error object
