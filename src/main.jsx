@@ -8,7 +8,7 @@ import { UsercontextProvider } from "./context/Usercontext";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 // the providers for AuthContext, UserContext etc. provide their values for App.jsx
-//this makes their values globally available in the application
+//this makes their values globally available to every component in the application
 root.render(
   <React.StrictMode>
     <AuthContextProvider>
