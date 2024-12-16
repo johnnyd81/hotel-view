@@ -21,6 +21,7 @@ const useLogin = () => {
     });
     const json = await response.json();
 
+    //handle the error if the response is unsuccessful
     if (!response.ok) {
       setIsLoading(false);
       setError(json.error);
