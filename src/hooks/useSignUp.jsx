@@ -8,6 +8,7 @@ const useSignUp = () => {
   const { dispatch, server } = useAuthContext();
 
   const signup = async (username, password) => {
+    //at the beginning of the sign up process the loading state is starting and the error state is still null
     setIsLoading(true);
     setError(null);
 
