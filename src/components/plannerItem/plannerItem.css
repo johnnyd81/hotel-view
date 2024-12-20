@@ -6,6 +6,7 @@
   overflow-y: hidden;
 }
 
+/* removes the scrollbar from the .planner-slider component */
 .planner-slider::-webkit-scrollbar {
   display: none;
 }
