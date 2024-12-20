@@ -1,4 +1,5 @@
 .navbar {
+  /* flexbox is used to align the elements in the navbar */
   height: 60px;
   background-color: teal;
   display: flex;
