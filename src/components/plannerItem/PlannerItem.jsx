@@ -1,6 +1,7 @@
 import React from "react";
 import "./plannerItem.css";
 
+// PlannerItem component that shows the image, name and distance of the destination
 const PlannerItem = ({ item }) => {
   return (
     <div className="planner-item" key={item.id}>
