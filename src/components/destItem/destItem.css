@@ -2,7 +2,7 @@
   /* set destination item dimensions i.e. width and height */
   width: 100%;
   height: 100%;
-  position: relative;
+  position: relative; /* position: relative allows it's children to positioned according to itself */
 }
 
 .dest-pic {
