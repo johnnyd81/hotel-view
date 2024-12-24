@@ -5,6 +5,7 @@ import Header from "../../components/header/Header";
 import { useSearchContext } from "../../hooks/useSearchContext";
 import { useNavigate } from "react-router-dom";
 import { useAuthContext } from "../../hooks/useAuthContext";
+//the LoadingModal is shown when asynchronous tasks are performed i.e. signing up, logging in etc.
 import LoadingModal from "../../components/loadingmodal/LoadingModal";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowAltCircleLeft } from "@fortawesome/free-solid-svg-icons";
