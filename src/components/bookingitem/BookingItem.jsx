@@ -9,7 +9,7 @@ const BookingItem = ({ booking }) => {
   //the dispatch function is used to update the contextual state
   const { adminUser, server } = useAuthContext();
 
-  //the cancelBooking function removes a booking from the database
+  // the cancelBooking function removes a booking from the database but the user has to authorized
   const cancelBooking = async (id) => {
     const response = await fetch(server + "/api/bookings/" + id, {
       method: "DELETE",
