@@ -3,7 +3,7 @@ import "./offer.css";
 import OfferItem from "../offerItem/OfferItem";
 
 const OfferSlider = () => {
-  //itemDetails are added dynamically to each Offeritem component
+  //itemDetails are added dynamically to each Offeritem component as each item represents one object in the itemDetails array
   const itemDetails = [
     {
       title: "Take your best holiday yet",
