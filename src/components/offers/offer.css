@@ -8,6 +8,7 @@
 }
 
 .offer-container::-webkit-scrollbar {
+  /* hide the scrollbar */
   display: none;
 }
 
