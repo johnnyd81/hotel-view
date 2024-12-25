@@ -3,6 +3,7 @@ import "./tripPlanner.css";
 import PlannerItem from "../plannerItem/PlannerItem";
 
 const TripPlanner = () => {
+  // array that contains all the destinations a user can choose from
   const plannerDetails = [
     {
       id: 0,
