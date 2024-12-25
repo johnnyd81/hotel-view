@@ -2,6 +2,7 @@ import "./resultItem.css";
 import { Link } from "react-router-dom";
 
 //the result item contains the information for each hotel i.e. pricing, description etc..
+// the argument named item is the prop that contains all the information
 const ResultItem = ({ item }) => {
   return (
     <div className="resultItem">
