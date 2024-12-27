@@ -27,7 +27,7 @@ export default Admin;
 export const Users = () => {
   //get the context variables users and the dispatch method to update the global usercontext
   const { users, dispatch } = useUsercontext();
-  const { server } = useAuthContext();
+  const { server } = useAuthContext(); // import the remote server url string
 
   useEffect(() => {
     const getUsers = async () => {
