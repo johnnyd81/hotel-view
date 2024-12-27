@@ -31,7 +31,7 @@ export const usersReducer = (state, action) => {
 };
 
 export const UsercontextProvider = ({ children }) => {
-  //useReducer hook takes a reducer function (usersReducer) and the initial state value i.e. users 
+  //useReducer hook takes a reducer function (usersReducer created above) and the initial state value i.e. users 
   const [state, dispatch] = useReducer(usersReducer, {
     users: [],
   });
