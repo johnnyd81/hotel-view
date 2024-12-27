@@ -31,7 +31,7 @@ export const AuthContextProvider = ({ children }) => {
 
   console.log("Authcontext state", state);
 
-  //the useEffect checks if a user is present in localStorage. If so then it logs in automatically
+  //the useEffect checks if a user is present in localStorage. If so then it logs the user in automatically
   useEffect(() => {
     const user = JSON.parse(localStorage.getItem("user"));
     //const adminUser = JSON.parse(localStorage.getItem("adminUser"));
