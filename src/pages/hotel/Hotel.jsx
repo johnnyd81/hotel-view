@@ -1,3 +1,4 @@
+//import the custom css file
 import "./hotel.css";
 import useFetchData from "../../hooks/useFetchData";
 import { useLocation } from "react-router-dom"; //allows me to use properties available in the current page
