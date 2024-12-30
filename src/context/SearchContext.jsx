@@ -24,6 +24,7 @@ export const SearchContextProvider = ({ children }) => {
   });
 
   return (
+    //the value prop contains the data that is available globally
     <searchContext.Provider value={{ ...state, dispatch }}>
       {children}
     </searchContext.Provider>
