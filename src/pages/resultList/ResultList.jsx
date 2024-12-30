@@ -7,6 +7,7 @@ import ResultItem from "../../components/resultItem/ResultItem";
 import useFetchData from "../../hooks/useFetchData";
 import LoadingModal from "../../components/loadingmodal/LoadingModal";
 import ResultListModal from "../../components/resultlistmodal/ResultListModal";
+//import the icons using react-fontawesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faSearch,
