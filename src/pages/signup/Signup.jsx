@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+//import the custom css file
 import "./signup.css";
 import useSignUp from "../../hooks/useSignUp";
 import LoadingModal from "../../components/loadingmodal/LoadingModal";
