@@ -1,6 +1,6 @@
 .formContainer {
   display: flex; /* use flexbox to align the elements in the form container */
-  flex-direction: column;
+  flex-direction: column; /* align the elements in a column layout */
   justify-content: center;
 }
 
