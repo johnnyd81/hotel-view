@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 //import the custom css file
 import "./login.css";
+//import the useLogin hook to get access to the loading state, login function and the error object
 import useLogin from "../../hooks/useLogin";
 import LoadingModal from "../../components/loadingmodal/LoadingModal";
 
