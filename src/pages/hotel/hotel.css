@@ -17,7 +17,7 @@
 }
 
 .backArrowIcon {
-  /* position the back arrow using absolute to place it anywhere in the viewport */
+  /* position the back arrow using absolute positioning to place it anywhere in the viewport */
   position: absolute;
   top: 28%;
   left: 18%;
@@ -94,6 +94,7 @@
   transition: all 0.5s;
 }
 
+/* use the hover pseudoclass to apply styling when the booking button is hovered */
 .bookNow1:hover {
   background-color: lightblue;
   color: #000000;
