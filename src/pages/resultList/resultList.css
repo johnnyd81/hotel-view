@@ -138,6 +138,7 @@
   outline: 1px solid black;
 }
 
+/* apply these style declarations if the screenwidth is 1020px and below */
 @media (max-width: 1020px) {
   .listSearch {
     display: none;
