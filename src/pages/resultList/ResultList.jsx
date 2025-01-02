@@ -5,6 +5,7 @@ import { format } from "date-fns"; //allows me to format the dates
 import { useState } from "react";
 import ResultItem from "../../components/resultItem/ResultItem";
 import useFetchData from "../../hooks/useFetchData";
+// import the loading modal that is displayed when data is be retrieved
 import LoadingModal from "../../components/loadingmodal/LoadingModal";
 import ResultListModal from "../../components/resultlistmodal/ResultListModal";
 //import the icons using react-fontawesome
