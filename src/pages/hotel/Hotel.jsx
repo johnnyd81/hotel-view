@@ -5,7 +5,7 @@ import { useLocation } from "react-router-dom"; //allows me to use properties av
 import Header from "../../components/header/Header";
 //import the useSearchContext hook to get access to the user's searched data
 import { useSearchContext } from "../../hooks/useSearchContext";
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom"; // get useNavigate from the react-router-dom package
 import { useAuthContext } from "../../hooks/useAuthContext";
 //the LoadingModal is shown when asynchronous tasks are performed i.e. signing up, logging in etc.
 import LoadingModal from "../../components/loadingmodal/LoadingModal";
