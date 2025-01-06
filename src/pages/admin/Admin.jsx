@@ -32,6 +32,7 @@ export const Users = () => {
 
   useEffect(() => {
     const getUsers = async () => {
+      //use fetch to get the users
       const response = await fetch(server + "/api/users");
       const json = await response.json();
 
