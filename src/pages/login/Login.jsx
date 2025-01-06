@@ -12,6 +12,7 @@ const Login = () => {
   //the useLogin hook returns the loading status, the potential error and the login function
   const { isLoading, error, login } = useLogin();
 
+  // call the function below when the login form is submitted
   const handleSubmit = async (e) => {
     e.preventDefault(); //prevent the default form actions i.e. refreshing the webpage
 
