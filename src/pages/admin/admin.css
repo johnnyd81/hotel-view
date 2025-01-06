@@ -1,5 +1,6 @@
 .userContainer,
 .bookingContainer {
+  /* use flexbox to align items in the userContainer and the bookingContainer */
   display: flex;
   flex-wrap: wrap;
   gap: 2%;
