@@ -3,6 +3,7 @@ import "./destination.css";
 import DestItem from "../destItem/DestItem";
 
 const Destination = () => {
+  // array that contains the destination details
   const destDetails1 = [
     { id: 0, destPic: "images/cape.jpeg", destTitle: "Cape town" },
     { id: 1, destPic: "images/durban.jpeg", destTitle: "Durban" },
