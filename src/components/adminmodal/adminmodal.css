@@ -28,6 +28,7 @@
 }
 
 .adminForm {
+  /* create space at the top of the form */
   margin-top: 10px;
 }
 
