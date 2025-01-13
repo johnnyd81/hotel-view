@@ -18,7 +18,8 @@ const BookingItem = ({ booking }) => {
       },
     });
     const json = await response.json();
-    
+
+    // log the error to the console when it occurs
     if (!response.ok) {
       console.log(json.error);
     }
