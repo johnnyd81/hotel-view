@@ -12,7 +12,7 @@ const Navbar = () => {
   const [classValue, setClassValue] = useState(""); //alters the navbar layout according to the classValue
   const { user } = useAuthContext(); //makes the user context available in the module
 
-  const { logout } = useLogout();
+  const { logout } = useLogout(); // destructure the logout function from the useLogout hook
 
   //log the current user out of the app
   const handleClick = () => {
