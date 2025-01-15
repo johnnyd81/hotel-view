@@ -20,7 +20,7 @@ const EditModal = ({ user, setOpen }) => {
 
     const response = await fetch(server + "/api/users/" + id, {
       method: "PUT", //the put method edits the details of a specific user
-      body: JSON.stringify(newName),
+      body: JSON.stringify(newName), // the newName has to be turned into a string so JSON.stringify method is used
       headers: {
         "Content-Type": "application/json",
       },
