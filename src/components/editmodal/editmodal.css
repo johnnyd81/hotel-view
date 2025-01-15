@@ -34,6 +34,7 @@
 }
 
 .formBtns {
+  /* create space around the form buttons by adding margin on the top and left */
   margin-top: 20px;
   margin-left: 10%;
 }
