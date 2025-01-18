@@ -13,7 +13,7 @@
 }
 
 .footer-title {
-  margin-top: -0.3%;
+  margin-top: -0.3%; /* gives a bit of margin at the top */
   font-size: 1.3rem;
 }
 
