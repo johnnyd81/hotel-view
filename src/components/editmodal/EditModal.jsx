@@ -15,7 +15,7 @@ const EditModal = ({ user, setOpen }) => {
   const { server } = useAuthContext();
 
   const editUser = async (id) => {
-    //newName stores the updated name for a user and only a admin can perform this action
+    //newName stores the updated name for a user and only a admin can update a username
     const newName = { username };
 
     const response = await fetch(server + "/api/users/" + id, {
