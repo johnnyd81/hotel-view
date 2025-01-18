@@ -13,6 +13,7 @@
 .editModalContainer {
   background-color: white;
   padding: 20px;
+  /* position relative makes the edit container the reference point to position it's children */
   position: relative;
 }
 
