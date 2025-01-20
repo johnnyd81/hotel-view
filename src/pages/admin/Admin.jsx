@@ -2,7 +2,7 @@
 import { useEffect } from "react";
 import UserItem from "../../components/useritem/UserItem";
 import { Tabs } from "antd"; //the antd package provides the functionality for the tabs
-import "./admin.css";
+import "./admin.css"; // import the custom css file
 import { useUsercontext } from "../../hooks/useUsercontext";
 import { useBookingContext } from "../../hooks/useBookingContext";
 import BookingItem from "../../components/bookingitem/BookingItem";
