@@ -9,6 +9,7 @@ const Destination = () => {
     { id: 1, destPic: "images/durban.jpeg", destTitle: "Durban" },
   ];
 
+  // array that contains the more destination details
   const destDetails2 = [
     { id: 2, destPic: "images/joburg.jpeg", destTitle: "Johannesburg" },
     { id: 3, destPic: "images/pretoria.jpeg", destTitle: "Pretoria" },
