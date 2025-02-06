@@ -27,6 +27,7 @@ const EditModal = ({ user, setOpen }) => {
     });
     const json = await response.json();
 
+    //if an error occurs, log it to the console
     if (!response.ok) {
       console.log(json.error);
     }
