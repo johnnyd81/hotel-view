@@ -20,7 +20,7 @@ export const authReducer = (state, action) => {
   }
 };
 
-//the function below wraps around the entire app and makes the state value available to it
+//the function below wraps around the entire app and makes the state value available in every file within the app
 export const AuthContextProvider = ({ children }) => {
   const [state, dispatch] = useReducer(authReducer, {
     user: null,
