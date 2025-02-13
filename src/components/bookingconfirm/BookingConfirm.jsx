@@ -8,7 +8,7 @@ const BookingConfirm = () => {
   //location variable contains properties like the url and available state properties
   const location = useLocation();
   const data = location.state.json;
-  const bookingId = location.state.json._id;
+  const bookingId = location.state.json._id;//get the _id on the location object
   const { user, server } = useAuthContext();
   const { dispatch } = useBookingContext();
   const navigate = useNavigate();
