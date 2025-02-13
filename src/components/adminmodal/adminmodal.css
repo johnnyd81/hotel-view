@@ -5,7 +5,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  display: flex;
+  display: flex;/*make the element a flex container*/
   flex-direction: column;
   align-items: center;
   justify-content: center;
