@@ -12,7 +12,7 @@ const BookingItem = ({ booking }) => {
   // the cancelBooking function removes a booking from the database but the user has to authorized
   const cancelBooking = async (id) => {
     const response = await fetch(server + "/api/bookings/" + id, {
-      method: "DELETE",
+      method: "DELETE", // specify the method to be performed
       headers: {
         Authorization: `Bearer ${adminUser.token}`,
       },
