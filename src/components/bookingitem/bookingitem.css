@@ -2,7 +2,7 @@
 .booking-item {
   width: 280px;
   background-color: rgb(159, 236, 207);
-  border-radius: 5px;
+  border-radius: 5px;/*creates a slightly rounded corner for the element*/
   margin: 20px 0 5px 5px;
   font-size: 1rem;
   text-align: center;
