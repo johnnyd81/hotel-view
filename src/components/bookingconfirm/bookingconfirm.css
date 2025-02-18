@@ -39,6 +39,7 @@
 }
 
 .removeBtn {
+  /*style the remove button*/
   font-size: 1rem;
   margin-top: 20px;
   font-weight: 700;
