@@ -1,6 +1,6 @@
 import { createContext, useReducer } from "react";
 
-export const BookingContext = createContext(); //creates context to be used in the app
+export const BookingContext = createContext(); //creates context to be used in the application
 
 //specifies actions that can be used to alter the state value
 //Actions handled in this function are getting bookings and deleting bookings
