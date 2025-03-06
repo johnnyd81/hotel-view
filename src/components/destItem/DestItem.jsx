@@ -1,7 +1,7 @@
 import React from "react";
 import "./destItem.css";
 
-//destination item component to display various travel destinations
+//destination item component to display the various travel destinations
 // the item prop contains all the information the DestItem component needs i.e. the picture, id, title etc.
 const DestItem = ({ item }) => {
   return (
