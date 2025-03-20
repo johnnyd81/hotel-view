@@ -10,6 +10,6 @@ export const useAuthContext = () => {
     throw Error("context must be used inside the AuthContextProvider");
   }
 
-  // when the useAuthContext function is called the context variable can be used 
+  // when the useAuthContext function is called it makes the context variables available to that file
   return context;
 };
