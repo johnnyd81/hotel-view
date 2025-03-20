@@ -6,7 +6,7 @@ const useLogout = () => {
   const { dispatch } = useAuthContext();
 
   const logout = () => {
-    //remove the stored "user" variable from localStorage
+    //remove the stored "user" variable from the browser localStorage
     localStorage.removeItem("user");
     localStorage.removeItem("adminUser");
     dispatch({ type: "LOGOUT" });
