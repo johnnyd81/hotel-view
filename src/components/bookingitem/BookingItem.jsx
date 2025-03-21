@@ -6,7 +6,7 @@ import { useAuthContext } from "../../hooks/useAuthContext";
 const BookingItem = ({ booking }) => {
   //import the dispatch method to update the global bookingcontext
   const { dispatch } = useBookingContext();
-  //the dispatch function is used to update the contextual state
+  //the dispatch function is used to update the global contextual state
   const { adminUser, server } = useAuthContext();
 
   // the cancelBooking function removes a booking from the database but the user has to authorized
