@@ -1,6 +1,6 @@
 import { createContext, useReducer } from "react";
 
-//allows the search values to be available in the entire application by making it global
+//allows the search values to be available in the entire app by making it global
 export const searchContext = createContext();
 
 //The searchReducer function modifies the global search state object i.e. destination, date and choices
