@@ -28,7 +28,7 @@ const useLogin = () => {
     }
 
     if (response.ok) {
-      // if a user logs in successfully they are stored in localStorage
+      // if a user logs in successfully the details for that user is stored in localStorage
       localStorage.setItem("user", JSON.stringify(json));
       dispatch({ type: "LOGIN", payload: json });
       setIsLoading(false);
