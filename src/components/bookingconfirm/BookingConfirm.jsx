@@ -25,7 +25,7 @@ const BookingConfirm = () => {
 
     // log the error to the console when it occurs
     if (!response.ok) {
-      console.log(json.error);
+      console.log(json.error); // write the error to the console
     }
 
     // alert message if the booking was deleted from the database successfully
