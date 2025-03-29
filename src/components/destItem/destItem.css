@@ -13,7 +13,7 @@
 }
 
 .dest-title {
-  position: absolute;
+  position: absolute; /* remove the element from the flow of the webpage */
   top: -5%;
   left: 4%;
   color: #fff;
