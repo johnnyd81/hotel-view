@@ -38,7 +38,7 @@ const AdminModal = () => {
     if (response.ok) {
       localStorage.setItem("adminUser", JSON.stringify(json));
       dispatch({ type: "LOGIN", payload: json });
-      setIsLoading(false);
+      setIsLoading(false); //stop the loading spinner
       setError(null);
     }
   };
