@@ -21,7 +21,7 @@ const BookingItem = ({ booking }) => {
 
     // log the error to the console when it occurs
     if (!response.ok) {
-      console.log(json.error);
+      console.log(json.error); // write the error to the console
     }
 
     // if the response is successful then the global booking state is updated
