@@ -1,6 +1,6 @@
 .adminModalContainer {
   width: 100vw; /*the width and height covers the entire viewport with the background-color specified*/
-  height: 100vh;
+  height: 100vh; /* take up the full height of the viweport */
   background-color: rgba(0, 0, 0, 0.418);
   position: fixed;
   top: 0;
