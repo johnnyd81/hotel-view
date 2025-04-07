@@ -4,7 +4,7 @@ import "./bookingitem.css";
 import { useAuthContext } from "../../hooks/useAuthContext";
 
 const BookingItem = ({ booking }) => {
-  //import the dispatch method to update the global bookingcontext
+  //import the dispatch method to update the global booking context
   const { dispatch } = useBookingContext();
   //the dispatch function is used to update the global contextual state
   const { adminUser, server } = useAuthContext();
@@ -19,7 +19,7 @@ const BookingItem = ({ booking }) => {
     });
     const json = await response.json();
 
-    // log the error to the console when it occurs
+    // log the error to the console when it happens
     if (!response.ok) {
       console.log(json.error); // write the error to the console
     }
