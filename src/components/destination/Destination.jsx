@@ -1,5 +1,5 @@
-import React from "react";
-import "./destination.css";
+import React from "react"; //import the react library
+import "./destination.css";//import the css file
 import DestItem from "../destItem/DestItem";
 
 const Destination = () => {
