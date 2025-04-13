@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useUsercontext } from "../../hooks/useUsercontext"; //imports my user context
 import { useAuthContext } from "../../hooks/useAuthContext";
-import "./editmodal.css";
+import "./editmodal.css";//import the css file
 //a fontawesome icon plays the role of a closing icon to my modal
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleXmark } from "@fortawesome/free-solid-svg-icons";
