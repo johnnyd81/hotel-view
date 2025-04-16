@@ -1,6 +1,6 @@
 import { useAuthContext } from "./useAuthContext";
 
-//the useLogout hook removes the user from localStorage thereby logging them out
+//the useLogout hook removes the user from localStorage thereby logging them out of the app
 const useLogout = () => {
   //the dispatch method updates the global user authcontext after a user logs out
   const { dispatch } = useAuthContext();
