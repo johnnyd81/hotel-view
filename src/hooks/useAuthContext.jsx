@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { AuthContext } from "../context/AuthContext";
 
-//by calling the hook all the contextual values are available to that module
+//by calling the hook all the contextual values are available to that specific module
 export const useAuthContext = () => {
   //extract all the contextual values and store it in the context variable i.e. in the form of an object
   const context = useContext(AuthContext);
