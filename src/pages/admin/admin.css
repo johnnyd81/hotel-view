@@ -8,7 +8,7 @@
 }
 
 .Tabs.TabPane {
-  /* make the font bolder */
+  /* make the font bolder by increasing the font-weight */
   font-weight: 600;
 }
 
