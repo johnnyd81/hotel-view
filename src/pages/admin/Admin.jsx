@@ -1,7 +1,7 @@
 //import the useEffect hook to help with getting data
 import { useEffect } from "react";
 import UserItem from "../../components/useritem/UserItem";
-import { Tabs } from "antd"; //the antd package provides the functionality for the tabs
+import { Tabs } from "antd"; //the antd package provides the functionality for the tabs 
 import "./admin.css"; // import the custom css file
 import { useUsercontext } from "../../hooks/useUsercontext";
 import { useBookingContext } from "../../hooks/useBookingContext";
@@ -29,7 +29,7 @@ export const Users = () => {
   //get the context variables users and the dispatch method to update the global usercontext
   const { users, dispatch } = useUsercontext();
   const { server } = useAuthContext(); // import the remote server url string
-
+//useEffect hook allows side effects like fetching data 
   useEffect(() => {
     const getUsers = async () => {
       //use fetch to get the users
