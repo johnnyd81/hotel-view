@@ -27,7 +27,7 @@ const useFetchData = (url) => {
         setError(null);
       }
     };
-    fetchData();
+    fetchData();// call the fetchData function
     //the dependency array contains the variable that causes the useEffect to run again if it changes
   }, [url]);
   
