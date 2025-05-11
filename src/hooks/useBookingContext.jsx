@@ -6,6 +6,7 @@ export const useBookingContext = () => {
   // the useContext hook allows the BookingContext to accessed when it is called in a file
   const context = useContext(BookingContext);
 
+  //check if the context is available
   if (!context) {
     throw Error("context must be used inside BookingContextProvider");
   }
