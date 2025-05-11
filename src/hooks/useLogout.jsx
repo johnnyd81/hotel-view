@@ -10,7 +10,8 @@ const useLogout = () => {
     localStorage.removeItem("user");
     localStorage.removeItem("adminUser");
     dispatch({ type: "LOGOUT" });
-  };
+  }; 
+  //return the logout function when useLogout funtion is called
   return { logout };
 };
 
