@@ -1,6 +1,6 @@
 import { createContext, useReducer } from "react";
 
-export const Usercontext = createContext(); //creates context to be used by the entire app
+export const Usercontext = createContext(); //creates a context variable to be used by the entire app
 
 //specifies actions that can be used to change the state variable i.e. users
 export const usersReducer = (state, action) => {
