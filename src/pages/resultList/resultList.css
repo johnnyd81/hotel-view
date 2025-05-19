@@ -1,5 +1,5 @@
 .listContainer {
-  /* Align the list container using flexbox */
+  /* Align the list container element using flexbox */
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
