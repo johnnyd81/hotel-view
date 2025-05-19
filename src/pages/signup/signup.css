@@ -1,5 +1,5 @@
 .formContainer1 {
-  /*Align elements in the form using flexbox*/
+  /*Align child elements in the form using flexbox*/
   display: flex;
   flex-direction: column;
   justify-content: center;
