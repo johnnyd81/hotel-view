@@ -15,7 +15,7 @@ const Signup = () => {
     //prevent webpage from refreshing itself
     e.preventDefault();
 
-    //use the signup function to register a user using their username and password
+    //the signup function is used to register a user using their username and password
     await signup(username, password);
   };
 
