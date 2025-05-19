@@ -23,7 +23,7 @@ const ResultList = () => {
   const [min, setMin] = useState(0); // set the minimum price range to search the database
   const [max, setMax] = useState(0); // set the maximum price range to search the database
   const [showModal, setShowModal] = useState("");
-  const { server } = useAuthContext(); // destructure the server connection string
+  const { server } = useAuthContext(); // destructure the server connection string from the returned object
 
   //fetches data from the database that matches the queries i.e. destination, minimum price and maximum price
   const { data, isLoading } = useFetchData(
