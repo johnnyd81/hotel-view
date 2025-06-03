@@ -16,7 +16,7 @@ import AdminModal from "./components/adminmodal/AdminModal";
 import BookingConfirm from "./components/bookingconfirm/BookingConfirm";
 
 function App() {
-  const { user, adminUser } = useAuthContext(); //the useAuthContext hook allows me to use the user global value
+  const { user, adminUser } = useAuthContext(); //the useAuthContext hook allows me to use the user the global value
   //if the user is authenticated then they are allowed to use the app, if not then they have to sign up
 
   //by using Navigate I can avoid an unauthenticated user from using the app
