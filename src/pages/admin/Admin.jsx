@@ -1,4 +1,4 @@
-//import the useEffect hook to help with getting data
+//import the useEffect hook to help with getting the data
 import { useEffect } from "react";
 import UserItem from "../../components/useritem/UserItem";
 import { Tabs } from "antd"; //the antd package provides the functionality for the tabs 
