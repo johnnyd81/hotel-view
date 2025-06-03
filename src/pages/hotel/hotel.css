@@ -17,7 +17,7 @@
 }
 
 .backArrowIcon {
-  /* position the back arrow using absolute positioning to position it anywhere in the viewport */
+  /* position the back arrow using absolute positioning to position it anywhere in the viewport i.e. the webpage*/
   position: absolute;
   top: 28%;
   left: 18%;
