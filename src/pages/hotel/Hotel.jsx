@@ -19,7 +19,7 @@ const Hotel = () => {
   
   const { data, isLoading } = useFetchData(`${server}/api/hotels/find/${id}`); //fetches data using the useFetchData hook
   const { date, choices, destination } = useSearchContext();
-  const { user } = useAuthContext(); // destructure the user variable
+  const { user } = useAuthContext(); // destructure the user variable from the global context
 
   const milliseconds_per_day = 60 * 60 * 24 * 1000; //amount of milliseconds for a single day
 
