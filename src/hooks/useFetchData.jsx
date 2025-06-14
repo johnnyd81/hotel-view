@@ -16,6 +16,7 @@ const useFetchData = (url) => {
       const response = await fetch(url);
       const json = await response.json();
 
+      //check if the response exists
       if (!response.ok) {
         setError(json.error);
         setIsLoading(false);
