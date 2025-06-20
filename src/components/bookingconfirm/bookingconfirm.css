@@ -4,7 +4,7 @@
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   color: white;
-  display: flex; /*make the element a flex container*/
+  display: flex; /*make the parent element a flex container*/
   justify-content: center;
   margin: -10px;
   min-height: 100vh;
