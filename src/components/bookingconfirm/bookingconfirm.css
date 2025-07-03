@@ -5,7 +5,7 @@
     "Lucida Sans", Arial, sans-serif;
   color: white;
   display: flex; /*make the parent element a flex container*/
-  justify-content: center;
+  justify-content: center;/*align the content in the center*/
   margin: -10px;
   min-height: 100vh;
   position: relative;
