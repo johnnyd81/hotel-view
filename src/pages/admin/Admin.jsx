@@ -32,7 +32,7 @@ export const Users = () => {
 //useEffect hook allows side effects like fetching data 
   useEffect(() => {
     const getUsers = async () => {
-      //use fetch to get the users
+      //use fetch to get the users in the database
       const response = await fetch(server + "/api/users");
       const json = await response.json();
 
