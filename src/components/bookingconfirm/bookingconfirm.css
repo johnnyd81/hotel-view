@@ -23,7 +23,7 @@
 }
 
 .bMessage {
-  font-size: 1.1rem;
+  font-size: 1.1rem; /*set a custom font size*/
 }
 
 .homeBtn {
