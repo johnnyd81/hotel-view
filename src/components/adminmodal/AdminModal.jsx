@@ -5,7 +5,7 @@ import { useAuthContext } from "../../hooks/useAuthContext";
 import LoadingModal from "../loadingmodal/LoadingModal";
 
 const AdminModal = () => {
-  //required stateful variables needed in this file
+  //required stateful variables that are needed in this file
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState(null); // shows the potential error to the user
